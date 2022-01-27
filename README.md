@@ -1,20 +1,47 @@
-## Para publicar:
+## Configurações Iniciais
 
-1) git status | git add . | git commit -m 'DIZ SOBRE O QUE FEZ'
-2) vtex release patch stable (ELE VAI PERGUNTAR ALGUMAS VEZES SE VC QUER AUMENTAR A VERSÃO, VOCE VAI CONFIRMANDO ATÉ O FINAL)
-3) vtex deploy --force (SE NAO USAR O --force VOCE TEM QUE ESPERAR 7MINUTOS PRA DAR O DEPLOY. COM O --force, VOCE IGNORA ISSO. DAI É SÓ DAR YES NAS DUAS PERGUNTAS DELE)
-4) vtex use master (VOLTA PRA MASTER)
-5) vtex update (QUANDO USAR ELE, VAI APARECER QUE TEM UM TEMPLATE PRA ATUALIZAR, NO CASO, O TEMA QUE VOCE ACABOU DE DAR DEPLOY, DAI É SÓ CONFIRMAR)
+1) vtex install vtex.store@2.x --force
+2) vtex install vtex.admin@3.x
+3) vtex install vtex.admin-pages@4.x
+4) vtex install vtex.admin-apps@3.x
+5) vtex install vtex.rewriter@1.x --force
+6) vtex install vtex.admin-search vtex.search-resolver@1.x
+7) vtex install vtex.reviews-and-ratings@2.x
 
-Comandos 1, 2 e 3. São no ambiente de homologação.
-Comandos 4 e 5 são na master.
+Instalar Wishlist, seguir documentação:
+https://vtex.io/docs/components/all/vtex.wish-list@1.2.0/
 
---
+Depois de instalar todos, vá ao Admin da Loja, procure no menu lateral por 'Busca > Configuração de integração' e clique em 'Iniciar Integração'.
 
-git status | git add . | git commit -m 'DIZ SOBRE O QUE FEZ'
-vtex release patch stable
-vtex deploy --force
-vtex use master
+Baixar tema que irá utilizar e modificar os arquivos com base na nova loja, alterando o 'vendor', para mais dúvidas, seguir os passos:
+https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-1-basicsetup
+
+## Comandos mais utilizados
+
+yarn global add vtex
+vtex login *loja*
+vtex whoami
+vtex ls
 vtex update
+vtex deploy
+vtex install 'vendor'@'version'
 
---
+## Comandos de Desenvolvimento:
+1) vtex use bnv - Para acessar o ambiente de homologação
+2) vtex link - Para poder modificar o código e ele replicar as alterações
+3) Para colocar em produção as alterações feitas:
+	(Em ambiente de homologação)
+	-> git status | git add . | git commit -m 'O que foi feito'
+	-> vtex release patch stable
+	-> vtex deploy --force
+
+Feito isso, vá para a master usando o comando:
+-> vtex use master
+
+E então atualize o template
+-> vtex update
+
+## Apps
+
+* Para criar novos apps precisa autorizacao da vtex via chamado:
+-> Abrir chamado vtex para mudar de 'Business Edition' para 'Store Edition' (vtex.edition-store@x.x)
