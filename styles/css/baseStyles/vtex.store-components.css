@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@media screen and (max-width: 1025px){
+    :global(.vtex-store__template){
+        background: #f7faf9;
+    }
+}
+
+
+:global(.vtex-button){
+    transition: .3s;
+}
+
+:global(.vtex-button):hover{
+    background: transparent;
+}
+
+:global(.vtex-button__label){
+    height: auto;
+}
+
+/* Geral */
+@media screen and (min-width: 1026px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px){
+    .container{
+        max-width: 1366px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        max-width: 1366px;
+    }
+}
+
+
+
+/* Campos de Formulário */
+.submit :global(.vtex-button){
+    height: 40px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.error{
+    font-size: 13px;
+}
+
+
+._lgpdy-eye{
+    bottom: 65px;
+}

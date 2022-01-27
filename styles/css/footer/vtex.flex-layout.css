@@ -1,0 +1,53 @@
+/* Footer Top */
+
+/* Footer - Selos de Segurança */
+
+@media screen and (min-width: 1026px){
+    .flexCol--col{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1025px){
+
+    .flexRowContent--footer-top{
+        flex-wrap: wrap;
+    }
+
+    .flexRowContent--footer-top :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+
+    .flexCol--footer-security,
+    .flexCol--footer-paymentMethods,
+    .flexCol--footer-social{
+        margin-bottom: 30px;
+    }
+
+    .flexCol--footer-security{
+        margin-top: 20px;
+    }
+}
+
+
+
+/* Footer Middle */
+.flexRowContent--footer-copyright{
+    border-top: 1px solid #5B5B5B;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 1026px){
+    .flexRowContent--footer-copyright{
+        margin-top: 30px;
+    }
+}
+
+
+
+/* Footer Bottom */
+.flexRow--footer-developedBy{
+    background: #FFFFFF;
+    padding: 15px 0;
+}

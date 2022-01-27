@@ -1,0 +1,13 @@
+{
+    "flex-layout.row#product-name-summary":{
+        "children": [
+            "product-summary-name"
+        ],
+        "props": {
+            "blockClass": "name-summary",
+            "fullWidth": false,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false
+        }
+    }
+}

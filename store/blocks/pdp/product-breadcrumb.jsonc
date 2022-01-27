@@ -1,0 +1,16 @@
+{
+  "flex-layout.row#pdp-breadcrumb": {
+    "children": [
+      "breadcrumb"
+    ],
+    "props": {
+      "marginTop": 4
+    }
+  },
+
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  }
+}

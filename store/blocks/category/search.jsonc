@@ -1,0 +1,16 @@
+{
+    "store.search": {
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 16,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip"
+            }
+        }
+    }
+}

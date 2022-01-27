@@ -1,0 +1,17 @@
+.wrapper--header-minicart-promo{
+    width: 100%;
+}
+
+.paragraph--header-minicart-promo{
+    width: 100%;
+    background: #DE1519;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: -16px 0 20px 0;
+}

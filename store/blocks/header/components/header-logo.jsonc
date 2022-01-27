@@ -1,0 +1,25 @@
+{
+  "flex-layout.col#header-logo": {
+    "children": [
+      "logo"
+    ],
+    "props": {
+      "blockClass": "header-logo",
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }    
+  },
+    
+  "logo": {
+    "props": {
+      "url": "/arquivos/logo-header.png",
+      "title": "Caus Móveis",
+      "href": "/",
+      "width": 85,
+      "height": 64,
+      "mobileWidth": 80,
+      "mobileHeight": 60
+    }
+  }
+}

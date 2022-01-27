@@ -1,0 +1,90 @@
+/* Preço De */
+.listPrice--summary{
+  font-size: 9px;
+  line-height: 11px;
+  margin-bottom: 4px;
+}
+
+@media screen and (min-width: 1026px){
+  .listPrice--summary{
+    font-size: 10px;
+    line-height: 11px;
+  }
+}
+
+
+
+/* Melhor preço */
+.sellingPrice--summary{
+  font-size: 15px;
+  line-height: 15px;
+}
+
+@media screen and (min-width: 1026px){
+  .sellingPriceValue--summary{
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+
+/* Preço à vista */
+.spotPrice--summary{
+  font-size: 11px;
+  line-height: 11px;
+}
+
+@media screen and (min-width: 1026px){
+  .spotPriceValue--summary{
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+
+/* Parcelamento */
+.installments--summary{
+  font-size: 10px;
+  line-height: 14px;
+}
+
+@media screen and (min-width: 1026px){
+  .installments--summary{
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+
+.installmentsNumber--summary,
+.installmentValue--summary{
+
+}
+
+@media screen and (min-width: 1026px){
+  .installmentsNumber--summary,
+  .installmentValue--summary{
+
+  }
+}
+
+
+
+/* Desconto */
+.savings--summary{
+  z-index: 1;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: #FFFFFF;
+  background-color: #27ae60;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 9px;
+  margin: -5px 0 0 5px;
+}
+
+@media screen and (min-width: 1026px){
+  .savings--summary{
+    font-size: 11px;
+    line-height: 12px;
+  }
+}

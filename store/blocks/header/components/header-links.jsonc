@@ -1,0 +1,21 @@
+{
+    "flex-layout.col#header-links": {
+        "children": [
+            "flex-layout.row#header-links"
+        ],
+        "props": {
+            "blockClass": "header-links",
+            "verticalAlign": "middle"
+        }
+    },
+
+    "flex-layout.row#header-links": {
+        "children": [
+          "login", //header-login.jsonc
+          "minicart.v2" //minicart.jsonc
+        ],
+        "props": {
+            "colSizing": "auto"
+        }
+    }
+}

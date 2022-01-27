@@ -1,0 +1,85 @@
+.flexRow--categoryInfo :global(.vtex-store-components-3-x-container){
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 1026px){
+  .flexRowContent--categoryInfo{
+    padding: 8px;
+    background: #F9F9F9;
+  }
+}
+
+
+@media screen and (max-width: 1025px){
+  .flexRow--categoryInfoMobile{
+    margin: 5px 0 20px;
+  }
+
+  .flexRow--categoryInfoMobile :global(.vtex-store-components-3-x-container){
+    padding: 0;
+  }
+
+  .flexCol--categoryInfoMobile-content{
+    padding: 15px;
+    background: #F9F9F9;
+  }
+
+  .flexRow--orderByAndFilterMobile{
+    margin-top: 15px;
+  }
+}
+
+
+
+
+/* Total de Produtos */
+.flexCol--productCountCol{
+  padding: 0;
+}
+
+
+
+
+
+/* OrderBy / Filters */
+.flexColChild--categoryInfoMobile{
+  margin-top: 15px;
+}
+
+
+
+
+
+
+/* Vtex */
+.flexRowContent--savingsSummaryListDesktop {
+  justify-content: flex-start;
+}
+
+.flexCol--summaryRightListDesktop {
+  justify-content: space-around;
+}
+
+.flexRow--buyNowButton :global(.vtex-button) {
+  background: #eef3f7;
+  border-color:#eef3f7;
+  color: #0f3e99;
+}
+
+.flexRow--buyNowButton:hover :global(.vtex-button) {
+  background: #dbe9fd;
+  border-color:#dbe9fd;
+}
+
+.flexCol--productRating {
+  margin-bottom: 3rem;
+}
+
+.flexCol--summaryDetailsListMobile {
+  justify-content: space-between;
+}
+
+.flexCol--summaryUpDetailsListMobile {
+  margin-bottom: 0.25rem
+}

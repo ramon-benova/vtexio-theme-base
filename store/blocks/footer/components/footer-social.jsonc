@@ -1,0 +1,72 @@
+{
+  "flex-layout.col#footer-social": {
+    "children": [
+      "rich-text#footer-social-title",
+      "vtex.menu@2.x:menu#footer-social-content"
+    ],
+    "props": {
+      "blockClass": ["footer-col", "footer-text", "footer-social"],
+      "preventVerticalStretch": true
+    }
+  },
+
+  //Título
+  "rich-text#footer-social-title": {
+    "props": {
+      "text": "Siga-nos",
+      "blockClass": "footer-title"
+    }
+  },
+
+
+  //Conteúdo
+  "vtex.menu@2.x:menu#footer-social-content": {
+    "children": [
+      "menu-item#facebook",
+      "menu-item#instagram"
+    ],
+    "props": {
+      "orientation": "horizontal"
+    }
+  },
+
+  "menu-item#facebook": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "footer-socialIcon",
+      "iconProps": {
+        "id": "icon-facebook",
+        "activeClassName": "vtex-icon-facebook",
+        "size": "26",
+        "viewBox": "0 0 17.501 35"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.facebook.com.br/CausMoveis",
+        "noFollow": true,
+        "tagTitle": "Facebook"
+      }
+    }
+  },
+
+  "menu-item#instagram": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "footer-socialIcon",
+      "iconProps": {
+        "id": "icon-instagram",
+        "activeClassName": "vtex-icon-instagram",
+        "size": "26",
+        "viewBox": "0 0 34.993 35"
+      },
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.instagram.com.br/causmoveis",
+        "noFollow": true,
+        "tagTitle": "Instagram"
+      }
+    }
+  }
+}

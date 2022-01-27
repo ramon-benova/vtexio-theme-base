@@ -1,0 +1,14 @@
+{
+    "flex-layout.row#footer-top": {
+        "children": [
+            "flex-layout.col#footer-attendance",
+            "flex-layout.col#footer-aboutUs",
+            "flex-layout.col#footer-helpAndSupport",
+            "flex-layout.col#footer-security-paymentMethods",
+            "flex-layout.col#footer-social"
+        ],
+        "props": {
+            "blockClass": "footer-top"
+        }
+    }
+}

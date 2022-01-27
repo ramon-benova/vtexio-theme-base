@@ -1,0 +1,22 @@
+.title{
+    font-weight: bold;
+    color: #DC1418;
+    background: #f7faf9;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: 1px solid #dddddd;
+    margin: 0 0 15px 0;
+    padding: 0 0 5px 0;
+}
+
+@media screen and (min-width: 1026px){
+    .title{
+        font-size: 22px;
+        line-height: 28px;
+        background: #FFFFFF;
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "flex-layout.row#category-banner-full": {
+        "children": [
+            "image#category-banner-full"
+        ],
+        "props": {
+            "blockClass": [
+                "banner-full"
+            ],
+            "fullWidth": true,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": true
+        }
+    },
+
+    "image#category-banner-full": {
+        "props": {
+            "src": ""
+        }
+    }
+}

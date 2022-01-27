@@ -1,0 +1,23 @@
+{
+    "store.custom#cluster-page": {
+        "blocks": [
+            "search-result-layout.customQuery#cluster"
+        ]
+    },
+    "search-result-layout.customQuery#cluster": {
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ],
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "140",
+                "mapField": "productClusterIds"
+            }
+        }
+    }
+}

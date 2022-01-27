@@ -1,0 +1,476 @@
+/* Imagem do Produto */
+@media screen and (min-width: 1026px){
+  .carouselGaleryThumbs{
+    max-width: 75px;
+    border: 0;
+  }
+}
+
+.productImagesThumb{
+  /* border: 1px solid #dddddd; */
+  padding: 0;
+  margin: 5px;
+}
+
+
+.productImagesThumbActive{
+  box-shadow: 0 0 8px #DE15194d;
+  border: 1px solid #DE1519;
+}
+
+.thumbImg{
+  border-radius: 5px;
+}
+
+
+/* Nome do Produto */
+.productNameContainer {
+  color: #000000;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 1026px){
+  .productNameContainer {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+
+
+/* Sku Selector */
+.skuSelectorContainer{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1026px){
+  .skuSelectorContainer{
+    flex-wrap: nowrap;
+  }
+}
+
+.skuSelectorSubcontainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.skuSelectorNameContainer{
+  margin: 0;
+}
+
+.skuSelectorName{
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.skuSelectorName::before{
+  content: "Selecione a "
+}
+
+
+.skuSelectorOptionsList{
+  margin-left: 0;
+}
+
+.skuSelectorItem{
+  border: none;
+  outline: 0;
+  padding: 0;
+  height: auto;
+}
+
+.skuSelectorItem--selected :global(.vtex-store-components-3-x-frameAround){
+  border-width: 3px;
+}
+
+.skuSelectorInternalBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  border: 0;
+}
+
+.skuSelectorItemTextValue{
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  width: 65px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #dddddd;
+}
+
+.skuSelectorItemImageValue{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  width: 49px;
+  height: 49px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+
+/* Cálculo de Frete */
+.shippingContainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 1025px){
+  .shippingContainer{
+    margin: 15px 0;
+  }
+}
+
+
+
+.shippingContainer :global(.vtex-address-form__postalCode){
+  padding: 0;
+  width: 100%;
+}
+
+.shippingContainer :global(.vtex-input){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 1025px){
+  .shippingContainer :global(.vtex-input){
+    flex-wrap: wrap;
+  }
+}
+
+
+/* Calcular Frete - Titulo */
+.shippingContainer :global(.vtex-input__label){
+  font-size: 0;
+}
+
+@media screen and (min-width: 1026px){
+  .shippingContainer :global(.vtex-input__label){
+    text-align: left;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .shippingContainer :global(.vtex-input__label){
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+}
+
+.shippingContainer :global(.vtex-input__label)::before{
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='13.484' viewBox='0 0 19 13.484'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23212529;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(9.5 6.742)'%3E%3Cg transform='translate(-9.5 -6.742)'%3E%3Cpath class='a' d='M80.919,360a.919.919,0,1,0,.919.919A.919.919,0,0,0,80.919,360Zm0,1.226a.306.306,0,1,1,.306-.306A.306.306,0,0,1,80.919,361.226Z' transform='translate(-77.242 -349.274)'/%3E%3Cpath class='a' d='M392.919,360a.919.919,0,1,0,.919.919A.919.919,0,0,0,392.919,360Zm0,1.226a.306.306,0,1,1,.306-.306A.306.306,0,0,1,392.919,361.226Z' transform='translate(-377.29 -349.274)'/%3E%3Cpath class='a' d='M25.927,80H14.9a1.074,1.074,0,0,0-1.073,1.073v1.685H10.758a.307.307,0,0,0-.266.154L8.04,87.2a.307.307,0,0,0-.04.152v3.524a1.074,1.074,0,0,0,1.073,1.073h.792a1.838,1.838,0,0,0,3.625,0h8.326a1.838,1.838,0,0,0,3.625,0h.486A1.074,1.074,0,0,0,27,90.879V81.073A1.074,1.074,0,0,0,25.927,80ZM10.411,84.29H12.6v2.758H8.835Zm-1.8,4.29h.613a.306.306,0,1,1,0,.613H8.613Zm3.065,4.29A1.226,1.226,0,1,1,12.9,91.645a1.226,1.226,0,0,1-1.226,1.226Zm2.145-1.532H13.49a1.838,1.838,0,0,0-3.625,0H9.073a.46.46,0,0,1-.46-.46V89.806h.613a.919.919,0,0,0,0-1.839H8.613v-.306H12.9a.306.306,0,0,0,.306-.306V83.984a.306.306,0,0,0-.306-.306H10.761l.175-.306h2.887Zm9.806,1.532a1.226,1.226,0,1,1,1.226-1.226A1.226,1.226,0,0,1,23.629,92.871Zm2.758-1.992a.46.46,0,0,1-.46.46h-.486a1.838,1.838,0,0,0-3.625,0H14.435V89.194H26.387Zm0-2.3H14.435V81.073a.46.46,0,0,1,.46-.46H25.927a.46.46,0,0,1,.46.46Z' transform='translate(-8 -80)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.shippingContainer :global(.vtex-input__label)::after{
+  content: "Calcule o frete e prazo de entrega";
+  font-size: 13px;
+  line-height: 20px;
+  color: #818181;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 1026px){
+  .shippingContainer :global(.vtex-input__label)::after{
+    font-weight: 400;
+  }
+}
+
+
+/* Calcular Frete - Input */
+.shippingContainer :global(.vtex-input-prefix__group){
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  width: 630px;
+}
+
+.shippingContainer :global(.vtex-input-prefix__group){
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  width: 700px;
+}
+
+.shippingContainer :global(.vtex-address-form-4-x-input){
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+/* Calcular Frete - Botão */
+.shippingContainer :global(.vtex-button){
+  width: 80px;
+  height: 40px;
+  background: #212529;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  border-radius: 30px;
+  border: 0;
+  margin: 0;
+  transition: .3s;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1026px){
+  .shippingContainer :global(.vtex-button){
+    top: 0;
+  }
+
+  .shippingContainer :global(.vtex-button):hover{
+    width: 90px;
+  }
+}
+
+
+.shippingContainer :global(.vtex-button)::before{
+  content: "";
+  background: url('data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQ5My4zNDkgNDkzLjM0OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDkzLjM0OSA0OTMuMzQ5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGcgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgNDkzLjM0OSAwKSI+PGc+Cgk8cGF0aCBkPSJNNDg3LjkzMiw1MS4xYy0zLjYxMy0zLjYxMi03LjkwNS01LjQyNC0xMi44NDctNS40MjRoLTI5Mi4zNmMtNC45NDgsMC05LjIzMywxLjgxMi0xMi44NDcsNS40MjQgICBjLTMuNjE1LDMuNjE3LTUuNDI0LDcuOTAyLTUuNDI0LDEyLjg1djU0LjgxOGgtNDUuNjgzYy01LjE0LDAtMTAuNzEsMS4yMzctMTYuNzA1LDMuNzExYy01Ljk5NiwyLjQ3OC0xMC44MDEsNS41MTgtMTQuNDE2LDkuMTM1ICAgbC01Ni41MzIsNTYuNTMxYy0yLjQ3MywyLjQ3NC00LjYxMiw1LjMyNy02LjQyNCw4LjU2NWMtMS44MDcsMy4yMy0zLjE0LDYuMTQtMy45OTcsOC43MDVjLTAuODU1LDIuNTcyLTEuNDc3LDYuMDg5LTEuODU0LDEwLjU2NiAgIGMtMC4zNzgsNC40NzUtMC42Miw3Ljc1OC0wLjcxNSw5Ljg1M2MtMC4wOTEsMi4wOTItMC4wOTEsNS43MSwwLDEwLjg1YzAuMDk2LDUuMTQyLDAuMTQ0LDguNDcsMC4xNDQsOS45OTV2OTEuMzYgICBjLTQuOTQ3LDAtOS4yMjksMS44MDctMTIuODQ3LDUuNDI4QzEuODA5LDM0Ny4wNzYsMCwzNTEuMzYzLDAsMzU2LjMxMmMwLDIuODUxLDAuMzc4LDUuMzc2LDEuMTQsNy41NjIgICBjMC43NjMsMi4xOSwyLjA0NiwzLjk0OSwzLjg1OCw1LjI4NGMxLjgwNywxLjMzNSwzLjM3OCwyLjQyNiw0LjcwOSwzLjI4NWMxLjMzNSwwLjg1NSwzLjU3MSwxLjQyNCw2LjcxMSwxLjcxMSAgIHM1LjI4LDAuNDc5LDYuNDIzLDAuNTc1YzEuMTQzLDAuMDg5LDMuNTY4LDAuMDg5LDcuMjc5LDBjMy43MTUtMC4wOTYsNS44NTUtMC4xNDQsNi40MjctMC4xNDRoMTguMjcxICAgYzAsMjAuMTcsNy4xMzksMzcuMzk3LDIxLjQxMSw1MS42NzRjMTQuMjc3LDE0LjI3NCwzMS41MDEsMjEuNDEzLDUxLjY3OCwyMS40MTNjMjAuMTc1LDAsMzcuNDAxLTcuMTM5LDUxLjY3NS0yMS40MTMgICBjMTQuMjc3LTE0LjI3NiwyMS40MTEtMzEuNTA0LDIxLjQxMS01MS42NzRIMzEwLjYzYzAsMjAuMTcsNy4xMzksMzcuMzk3LDIxLjQxMiw1MS42NzRjMTQuMjcxLDE0LjI3NCwzMS40OTgsMjEuNDEzLDUxLjY3NSwyMS40MTMgICBjMjAuMTgxLDAsMzcuMzk3LTcuMTM5LDUxLjY3NS0yMS40MTNjMTQuMjc3LTE0LjI3NiwyMS40MTItMzEuNTA0LDIxLjQxMi01MS42NzRjMC41NjgsMCwyLjcxMSwwLjA0OCw2LjQyLDAuMTQ0ICAgYzMuNzEzLDAuMDg5LDYuMTQsMC4wODksNy4yODIsMGMxLjE0NC0wLjA5NiwzLjI4OS0wLjI4OCw2LjQyNy0wLjU3NWMzLjEzOS0wLjI4Nyw1LjM3My0wLjg1NSw2LjcwOC0xLjcxMXMyLjkwMS0xLjk1LDQuNzA5LTMuMjg1ICAgYzEuODEtMS4zMzUsMy4wOTctMy4wOTQsMy44NTYtNS4yODRjMC43Ny0yLjE4NywxLjE0My00LjcxMiwxLjE0My03LjU2MlY2My45NTNDNDkzLjM1Myw1OS4wMDQsNDkxLjU0Niw1NC43MjQsNDg3LjkzMiw1MS4xeiAgICBNMTUzLjU5Nyw0MDAuMjhjLTcuMjI5LDcuMjMtMTUuNzk3LDEwLjg1NC0yNS42OTQsMTAuODU0Yy05Ljg5OCwwLTE4LjQ2NC0zLjYyLTI1LjY5Ny0xMC44NTQgICBjLTcuMjMzLTcuMjI4LTEwLjg0OC0xNS43OTctMTAuODQ4LTI1LjY5M2MwLTkuODk3LDMuNjE5LTE4LjQ3LDEwLjg0OC0yNS43MDFjNy4yMzItNy4yMjgsMTUuNzk4LTEwLjg0OCwyNS42OTctMTAuODQ4ICAgYzkuODk3LDAsMTguNDY0LDMuNjE3LDI1LjY5NCwxMC44NDhjNy4yMzYsNy4yMzEsMTAuODUzLDE1LjgwNCwxMC44NTMsMjUuNzAxQzE2NC40NSwzODQuNDgzLDE2MC44MzMsMzkzLjA1MiwxNTMuNTk3LDQwMC4yOHogICAgTTE2NC40NSwyMjguNDAzSDU0LjgxNHYtOC41NjJjMC0yLjQ3NSwwLjg1NS00LjU2OSwyLjU2OC02LjI4M2w1NS42NzQtNTUuNjcyYzEuNzEyLTEuNzE0LDMuODA5LTIuNTY4LDYuMjgzLTIuNTY4aDQ1LjExMSAgIFYyMjguNDAzeiBNNDA5LjQxLDQwMC4yOGMtNy4yMyw3LjIzLTE1Ljc5NywxMC44NTQtMjUuNjkzLDEwLjg1NGMtOS45LDAtMTguNDctMy42Mi0yNS43LTEwLjg1NCAgIGMtNy4yMzEtNy4yMjgtMTAuODQ5LTE1Ljc5Ny0xMC44NDktMjUuNjkzYzAtOS44OTcsMy42MTctMTguNDcsMTAuODQ5LTI1LjcwMWM3LjIzLTcuMjI4LDE1LjgtMTAuODQ4LDI1LjctMTAuODQ4ICAgYzkuODk2LDAsMTguNDYzLDMuNjE3LDI1LjY5MywxMC44NDhjNy4yMzEsNy4yMzUsMTAuODUyLDE1LjgwNCwxMC44NTIsMjUuNzAxQzQyMC4yNjIsMzg0LjQ4Myw0MTYuNjQ4LDM5My4wNTIsNDA5LjQxLDQwMC4yOHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiPjwvcGF0aD4KPC9nPjwvZz4gPC9zdmc+') no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 22px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  transition: .3s;
+}
+
+/* Calcular Frete - Não seu meu CEP */
+.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL){
+  text-align: right;
+  padding: 10px 0 0 0;
+  margin: 0;
+  color: #3288E9;
+  font-size: 11px;
+  line-height: 16px;
+  text-decoration: underline;
+  transition: .3s;
+}
+
+@media screen and (min-width: 1026px){
+  .shippingContainer :global(.vtex-address-form__postalCode-forgottenURL){
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+
+
+/* Calcular Frete - Resultado */
+.shippingTable,
+.shippingNoMessage{
+  padding: 15px 0;
+  margin: 20px 0 10px;
+  border-top: 1px solid #e3e4e6;
+  border-bottom: 1px solid #e3e4e6;
+  border-radius: 0;
+  font-size: 13px;
+  line-height: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media screen and (min-width: 1026px){
+  .shippingTable,
+  .shippingNoMessage{
+    padding: 15px;
+  }
+}
+
+
+.shippingNoMessage{
+  text-align: center;
+}
+
+.shippingTableRow:nth-child(odd){
+  background-color: #e3e4e6;
+}
+
+.shippingTableCell{
+  padding: 10px;
+  color: #212529;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 1026px){
+  .shippingTableCell{
+    font-size: 12px;
+  }
+}
+
+
+
+
+/* Compartilhar */
+.shareContainer{
+  margin: 15px 0 0 0;
+}
+
+.shareLabel{
+  color: #212529;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 5px;
+}
+
+
+
+/* Descrição */
+.productDescriptionContainer{}
+@media screen and (min-width: 1026px){
+  .productDescriptionContainer{
+    padding: 35px 0;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: flex-start;
+    justify-self: flex-start
+  }
+}
+
+.productDescriptionTitle{}
+@media screen and (min-width: 1026px){
+  .productDescriptionTitle{
+    padding: 0;
+    width: 25%;
+    color: #333333;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .productDescriptionTitle{
+    font-weight: 600;
+    margin: 0;
+    background: #de1519;
+    color: #FFF;
+    padding: 12px 15px;
+    border-radius: 10px 10px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.productDescriptionText{
+  font-weight: 400;
+  color: #212529;
+  background: #FFFFFF;
+}
+
+@media screen and (min-width: 1026px){
+  .productDescriptionText{
+    width: 75%;
+    font-size: 13px;
+    line-height: 26px;
+
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .productDescriptionText{
+    width: 100%;
+    font-size: 12px;
+    line-height: 24px;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.productDescriptionText :global(.vtex-store-components-3-x-container){
+  padding: 0;
+}
+
+
+
+/* Avise-me */
+.subscribeLabel{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.subscriberContainer{
+  border-top: 1px solid #ddd;
+  margin: 0 0 0 0;
+  padding: 1.5rem 0 0 0;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-title){
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-form){
+  margin: 25px 0 15px;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-content){
+  margin: 0;
+  max-width: 100%;
+}
+
+.subscriberContainer :global(.vtex-input-prefix__group){
+  border: 1px solid #ddd;
+  border-radius: 30px;
+}
+
+.subscriberContainer :global(.vtex-button){
+  background: #27ae60;
+  border-radius: 30px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+@media screen and (min-width: 1026px){
+  .subscriberContainer :global(.vtex-button){
+    width: auto;
+  }
+}

@@ -1,0 +1,29 @@
+.container--newsletter-title{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+@media screen and (min-width: 1026px){
+    .container--newsletter-title{
+        margin: 0 0 45px 0;
+    }
+}
+
+.wrapper--newsletter-title{
+    width: 100%;
+}
+
+.paragraph--newsletter-title{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: .3px;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1026px){
+    .paragraph--newsletter-title{
+        font-size: 21px;
+    }
+}

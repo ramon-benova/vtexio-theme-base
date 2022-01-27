@@ -1,0 +1,13 @@
+{
+    "flex-layout.col#footer-security-paymentMethods": {
+      "children": [
+        "flex-layout.col#footer-security",
+        "flex-layout.col#footer-paymentMethods"
+      ],
+      "props": {
+        "blockClass": ["footer-col", "footer-text", "footer-security-paymentMethods"],
+        "preventVerticalStretch": true,
+        "preventHorizontalStretch": true
+      }
+    }
+}

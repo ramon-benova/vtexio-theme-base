@@ -1,0 +1,105 @@
+/* Top Bar */
+.notificationBarContainer {
+    background-color: #000000;
+}
+
+.notificationBarInner{
+    min-height: 35px;
+}
+
+.notificationContent{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+/* Logo*/
+.logoImage{
+    width: 55px;
+    height: auto;
+    transition: .3s;
+}
+
+@media screen and (min-width: 1026px){
+    .logoImage{
+        width: 85px;
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 1026px){
+    .sizeDesktop{
+        display: block;
+        padding: 10px 15px 10px 0;
+        min-width: initial;
+        max-width: initial;
+        max-height: initial;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .sizeMobile{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+/* Busca */
+.searchBarContainer{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1026px){
+    .searchBarContainer{
+        width: 768px;
+        max-width: 768px;
+    }
+}
+
+
+.searchBarContainer :global(.vtex-input-prefix__group){
+    height: 44px;
+    border: 1px solid #DE1519;
+    border-radius: 30px;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input){
+    color: #000000;
+    font-size: 11px;
+}
+
+@media screen and (min-width: 1026px){
+    .searchBarContainer :global(.vtex-styleguide-9-x-input){
+        font-size: 12px;
+    }
+}
+
+
+.searchBarIcon--search::before{
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.994' height='24' viewBox='0 0 23.994 24'%3E%3Cg transform='translate(-0.003 0)'%3E%3Cpath d='M22.991,18.14l-4.1-4.1a.769.769,0,0,0-1.088,0l-1.275,1.275-.644-.644a8.965,8.965,0,1,0-1.077,1.1l.633.633-1.4,1.4a.77.77,0,0,0,0,1.088l4.1,4.1a3.432,3.432,0,0,0,4.854-4.854Zm-8.776-3.922A7.426,7.426,0,1,1,16.39,8.967,7.422,7.422,0,0,1,14.215,14.218ZM21.9,21.906a1.892,1.892,0,0,1-2.678,0l-3.558-3.558,2.678-2.678L21.9,19.228A1.892,1.892,0,0,1,21.9,21.906Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+}
+
+.searchBarIcon{
+    padding: 0;
+}
+
+.searchBarIcon--search :global(.vtex-store-components-3-x-searchIcon){
+    display: none;
+}

@@ -1,0 +1,28 @@
+{
+    "flex-layout.row#pdp-relatedProducts": {
+        "children": [
+            "shelf.relatedProducts"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": false,
+            "colGap": 0,
+            "rowGap": 0,
+            "marginBottom": 7
+        }
+    },
+    
+    "shelf.relatedProducts": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "props":{
+            "recommendation": "view",
+            "productList": {
+                "showTitle": true,
+                "titleText": "Produtos relacionados"
+            }
+        }
+    }
+}

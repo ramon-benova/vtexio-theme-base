@@ -1,0 +1,8 @@
+{
+    //Div
+    "list-context-renderer#div": {
+        "props": {
+            "itemElement": "div"
+        }
+    }
+}

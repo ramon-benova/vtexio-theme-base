@@ -1,0 +1,112 @@
+/* Banners Home - Slider */
+.sliderLayoutContainer--banner-home-slider {
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.sliderTrackContainer--banner-home-slider{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1025px){
+    .sliderArrows--banner-home-slider{
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (min-width: 1026px){
+    .sliderLeftArrow--banner-home-slider{
+        left: 20px;
+    }
+
+    .sliderRightArrow--banner-home-slider{
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .sliderLeftArrow--banner-home-slider{
+        left: 0;
+    }
+
+    .sliderRightArrow--banner-home-slider{
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .sliderArrows--banner-home-slider{
+        width: 28px;
+        height: 28px;
+    }
+
+    .caretIcon--banner-home-slider{
+        widtH: 10px;
+        height: 10px;
+    }
+}
+
+.paginationDotsContainer--banner-home-slider{
+    margin: 0;
+    bottom: 20px;
+}
+
+@media screen and (min-width: 1026px){
+    .paginationDotsContainer--banner-home-slider{
+        bottom: 25px;
+    }
+}
+
+.paginationDot--banner-home-slider{
+    border-radius: 0;
+    background-color: #212529;
+    border: 1px solid #FFFFFF;
+    padding: 0;
+    margin: 0 5px;
+
+    width: 35px !important;
+    height: 7px !important;
+    transition: .3s;
+}
+
+.paginationDot--banner-home-slider--isActive{
+    background-color: #DE1519;
+    width: 45px !important;
+}
+
+@media screen and (min-width: 1026px){
+    .paginationDot--banner-home-slider{
+        width: 45px !important;
+        height: 7px !important;
+    }
+
+    .paginationDot--banner-home-slider-slider--isActive{
+        width: 55px !important;
+    }
+}
+
+
+
+/* Banners Home - Categorias */
+@media screen and (max-width: 1025px){
+    .sliderLayoutContainer--infoCard-home-list{
+        padding: 0 !important;
+    }
+}
+
+
+
+
+/* Banner Home - Marcas*/
+@media screen and (min-width: 1026px){
+    .imageElement--banner-home-brands-slider{
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .imageElement--banner-home-brands-slider{
+        max-width: 75%;
+    }
+}

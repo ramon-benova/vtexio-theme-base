@@ -1,0 +1,47 @@
+{
+  "icon-cart#minicart-icon": {
+    "props": {
+      "size": 28,
+      "viewBox": "0 0 33.291 29.17"
+    }
+  },
+
+  "minicart.v2": {
+    "props": {
+      "customPixelEventId": "add-to-cart-button",
+      "quantityDisplay": "always",
+      "itemCountMode": "total",
+      "MinicartIcon": "icon-cart#minicart-icon",
+      "variation": "drawer"
+    },
+    "children": [
+      "minicart-base-content"
+    ]
+  },
+
+  "minicart-base-content": {
+    "blocks": ["minicart-empty-state"],
+    "children": [
+      "rich-text#header-minicart-promo",
+      "minicart-product-list",
+      "flex-layout.row#minicart-footer"
+    ]
+  },
+
+  "rich-text#header-minicart-promo": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "\n\nAproveite!!! 20% de desconto no preço à vista.",
+      "blockClass": "header-minicart-promo"
+    }
+  },
+
+  "minicart-product-list": {
+    "blocks": ["product-list#minicart"]
+  },
+
+  "minicart-summary": {
+    "blocks": ["checkout-summary.compact#minicart"]
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "flex-layout.row#product-skuSelector": {
+        "children": [
+            "product-summary-sku-selector"
+        ],
+        "props": {
+            "blockClass": "skuSelector-summary",
+            "fullWidth": false,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false
+        }
+    },
+
+    "product-summary-sku-selector": {
+        "props":{
+            "showVariationsLabels": false
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "flex-layout.row#header-middle": {
+    "children": [
+      "flex-layout.col#header-logo",
+      "flex-layout.col#header-search",
+      "flex-layout.col#header-links"
+    ],
+    "props": {
+      "blockClass": "header-middle",
+      "colSizing": "auto",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  }
+}

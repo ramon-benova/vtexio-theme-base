@@ -1,0 +1,21 @@
+
+/* Vitrines */
+.sliderLayoutContainer--shelf{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+@media screen and (max-width: 1025px){
+    .sliderArrows--shelf{
+      top: -50px;
+    }
+  
+    .sliderLeftArrow--shelf{
+      left: auto;
+      right: 45px;
+    }
+    
+    .sliderRightArrow--shelf{
+      right: 0;
+    }  
+}

@@ -1,0 +1,93 @@
+{
+    "flex-layout.row#home-banner-mosaic": {
+        "children": [
+            "flex-layout.col#home-banner-mosaic-left",
+            "flex-layout.col#home-banner-mosaic-right"
+        ],
+        "props": {
+            "colSizing": "equal",
+            "blockClass": ["home-container", "banner-home-mosaic"]
+        }
+    },
+
+    "flex-layout.col#home-banner-mosaic-left": {
+        "children": [
+            "image#imageMosaic01"
+        ],
+        "props": {
+            "fullWidth": false,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "blockClass": "banner-home-mosaic-left"
+        }
+    },
+
+    "flex-layout.col#home-banner-mosaic-right": {
+        "children": [
+            "flex-layout.row#home-banner-mosaic-right-top",
+            "flex-layout.row#home-banner-mosaic-right-bottom"
+        ],
+        "props": {
+            "fullWidth": false,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "blockClass": "banner-home-mosaic-right"
+        }
+    },
+
+    "flex-layout.row#home-banner-mosaic-right-top": {
+        "children": [
+            "image#imageMosaic02"
+        ],
+        "props": {
+            "fullWidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "blockClass": "banner-home-mosaic-right-top"
+        }
+    },
+
+    "flex-layout.row#home-banner-mosaic-right-bottom": {
+        "children": [
+            "image#imageMosaic03",
+            "image#imageMosaic04"
+        ],
+        "props": {
+            "fullWidth": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "blockClass": "banner-home-mosaic-right-bottom",
+            "colSizing": "equal",
+            "preserveLayoutOnMobile": true
+        }
+    },
+
+    "image#imageMosaic01": {
+        "props": {
+          "src": "/arquivos/banner-home-mosaic-01.png",
+          "blockClass": "banner-home-mosaic-img"
+        }
+    },
+
+    "image#imageMosaic02": {
+        "props": {
+          "src": "/arquivos/banner-home-mosaic-02.png",
+          "blockClass": "banner-home-mosaic-img"
+        }
+    },
+
+    "image#imageMosaic03": {
+        "props": {
+          "src": "/arquivos/banner-home-mosaic-03.png",
+          "blockClass": "banner-home-mosaic-img"
+        }
+    },
+
+    "image#imageMosaic04": {
+        "props": {
+          "src": "/arquivos/banner-home-mosaic-04.png",
+          "blockClass": "banner-home-mosaic-img"
+        }
+    }
+
+}

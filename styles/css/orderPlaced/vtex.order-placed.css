@@ -1,0 +1,329 @@
+:global(.vtex__icon-info){
+    color: #27ae60;
+}
+
+@media screen and (max-width: 1025px){
+    .orderPlacedWrapper{
+        margin: 30px 15px;
+        padding: 20px 12px;
+        background: #FFFFFF;
+        border: 1px solid #dddddd;
+    }
+}
+
+
+.confirmationTitle{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@media screen and (min-width: 1026px){
+    .confirmationTitle{
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.orderPlacedWrapper :global(.vtex-button){
+    transition: .3s;
+    background: #27ae60;
+    border-radius: 30px;
+    padding: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    height: auto;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: none;
+    user-select: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1026px){
+    .orderPlacedWrapper :global(.vtex-button){
+        width: auto;
+        height: 38px;
+        padding: 0;
+    }
+}
+
+
+.confirmationMessage{
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333;
+    margin: 25px 0 0 0;
+}
+
+@media screen and (min-width: 1026px){
+    .confirmationMessage{
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+
+.noticeListItem{
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
+
+@media screen and (min-width: 1026px){
+    .noticeListItem{
+        font-size: 15px;
+        line-height: 26px;
+    }
+}
+
+
+.noticeListItem :global(.vtex-button){
+    height: 38px;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.printButtonWrapper :global(.vtex-button){
+    font-size: 14px;
+}
+
+.barCodeCopyButtonWrapper{
+    background: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    border-radius: 0 0 8px 8px;
+}
+
+@media screen and (min-width: 1026px){
+    .barCodeCopyButtonWrapper{
+        border-radius: 0 8px 8px 0;
+    }
+}
+
+.barCodeCopyButtonWrapper :global(.vtex-button){
+    background: #333333;
+    font-size: 13px;
+}
+
+.bankInvoiceEmbedWrapper :global(.vtex-button){
+    width: 100%;
+    border-radius: 0;
+    background: #FFF;
+    color: #333;
+    border-top: 1px solid #ddd;
+    height: auto;
+    font-size: 13px;
+    padding: 15px 0;
+}
+
+.bankInvoiceEmbedWrapper :global(.vtex__icon-caret-up),
+.bankInvoiceEmbedWrapper :global(.vtex__icon-caret-down){
+    width: 11px;
+}
+
+.barCodeNumber{
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1026px){
+    .barCodeNumber{
+        font-size: 13px;
+    }
+}
+
+
+.printHintWrapper{
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.updateOrderButton :global(.vtex-button),
+.myOrdersButton :global(.vtex-button){
+    background: #333;
+    font-size: 13px;
+}
+
+.cancelOrderButton{
+    display: none;
+}
+
+.orderNumber{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1026px){
+    .orderNumber{
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+
+
+.packageDeliveryTitle{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1026px){
+    .packageDeliveryTitle{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.orderDatetime,
+.orderSoldBy,
+.customerInfoListEmail,
+.customerInfoListDocument,
+.customerInfoListPhone,
+.packageShippingEstimate,
+.packageSLA{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+}
+
+@media screen and (min-width: 1026px){
+    .orderDatetime,
+    .orderSoldBy,
+    .customerInfoListEmail,
+    .customerInfoListDocument,
+    .customerInfoListPhone,
+    .packageShippingEstimate,
+    .packageSLA{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+
+.customerInfoListName,
+.paymentGroup{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+@media screen and (min-width: 1026px){
+    .customerInfoListName,
+    .paymentGroup{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+
+.section--paymentMethods{
+    margin-top: 25px;
+}
+
+.addressContainer{
+    color: #333;
+}
+
+.paymentValue{
+    color: #de1519;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.productInfoColumn{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.productImageWrapper{
+    width: 100px;
+    height: auto;
+}
+
+.productListItem{
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+}
+
+.productName{
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+.productPrice{
+    color: #de1519;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.productQuantity{
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+    display: block;
+}
+
+.totalList{
+    border-radius: 8px;
+    width: 100%;
+    padding: 6px 0 0 0;
+    margin: 10px 0 0 0;
+}
+
+@media screen and (min-width: 1026px){
+    .totalList{
+        width: 35%;
+        padding: 6px 12px;
+    }
+}
+
+
+.totalListItem{
+    border-bottom: 1px solid #dddddd;
+    padding: 12px 0;
+}
+
+.totalListItem:last-child{
+    border-bottom: 0;
+}
+
+.totalListItemLabel{
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+.totalListItemValue{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #de1519;
+    margin: 0;
+    font-family: "Poppins";
+}

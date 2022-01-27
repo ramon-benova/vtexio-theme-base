@@ -1,0 +1,11 @@
+{
+  "add-to-cart-button#pdp": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "text": "Comprar",
+      "unavailableText": "Avise-me",
+      "blockClass": "buyButton--pdp"
+    }
+  }
+}

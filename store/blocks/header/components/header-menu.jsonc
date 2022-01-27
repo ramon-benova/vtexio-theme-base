@@ -1,0 +1,25 @@
+{
+  "bnv-category-menu#desktop": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "showCategories": true,
+      "departments": [],
+      "menuPosition": "center",
+      "sortSubcategories": "name",
+      "mobileMode": false
+    }
+  },
+
+  "bnv-category-menu#mobile": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "showCategories": true,
+      "departments": [],
+      "menuPosition": "left",
+      "sortSubcategories": "name",
+      "mobileMode": true
+    }
+  }
+}

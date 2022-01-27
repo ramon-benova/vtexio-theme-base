@@ -1,0 +1,22 @@
+{
+    "flex-layout.row#footer-middle": {
+        "children": [
+            "rich-text#copyright"
+        ],
+        "props": {
+            "blockClass": "footer-copyright",
+            "fullWidth": false,
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#copyright": {
+        "props": {
+            "text": "\nCaús Site Móveis e Eletrodomésticos - CNPJ: 42.415.855/0001-23 | R: FRANCISCO FERREIRA, 129 - Baixo Guandu/ES - CEP: 29730-000 \n As fotos aqui veiculadas, logotipo e marca são de propriedade do site https://www.causmoveis.com.br.\n É vetada a sua reprodução, total ou parcial, sem a expressa autorização da administradora do site. Caso os produtos ou condições comerciais apresentem divergências de valores, o preço válido é o do Checkout",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "footer-copyright-text"
+        }
+    }
+}

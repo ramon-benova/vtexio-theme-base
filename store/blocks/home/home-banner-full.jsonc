@@ -1,0 +1,30 @@
+{
+    "flex-layout.row#home-banner-full": {
+        "children": [
+            "list-context.image-list#home-banner-full"
+        ],
+        "props": {
+            "blockClass": [
+                "home-container-full",
+                "banner-full"
+            ],
+            "fullWidth": true,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": true
+        }
+    },
+
+    "list-context.image-list#home-banner-full": {
+        "children": [
+            "list-context-renderer#div"
+        ],
+        "props": {
+            "images": [
+                {
+                    "image": "/arquivos/banner-home-full.png",
+                    "mobileImage": "/arquivos/banner-home-mosaic-01.png"
+                }
+            ]
+        }
+    }
+}

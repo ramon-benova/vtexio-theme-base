@@ -1,0 +1,62 @@
+.container{
+    font-weight: 400;
+    color: #818181;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+@media screen and (min-width: 1026px){
+    .container{
+        font-size: 12px;
+        line-height: 20px;
+
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* Ícones - Home */
+.homeIcon{
+    display: none;
+}
+
+.homeLink::before{
+    content: "Home";
+}
+
+
+
+/* Ícones - Setinhas */
+.caretIcon{
+    display: none;
+}
+
+.termArrow{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.arrow::before{
+    content: "|";
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+
+.arrow--1{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.link:hover{
+    color: #DE1519;
+}
+
+
+/* Nome */
+.arrow:last-child :global(.vtex-breadcrumb-1-x-link),
+.term{
+    color: #DE1519;
+    font-weight: 500;
+}

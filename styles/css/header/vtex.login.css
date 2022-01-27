@@ -1,0 +1,74 @@
+.container :global(.vtex-button):hover,
+.container :global(.vtex-button):focus{
+    background-color: transparent;
+}
+
+.container :global(.vtex-button__label){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15px !important;
+}
+
+.container :global(.vtex-button__label)::before{
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26.87' height='34' viewBox='0 0 26.87 34'%3E%3Cg transform='translate(-3.565)'%3E%3Cpath d='M24.153,16.429a10.285,10.285,0,0,1-1.57,1.6A11.264,11.264,0,0,1,28.256,27.8c0,2.257-4.944,4.024-11.256,4.024S5.744,30.054,5.744,27.8a11.264,11.264,0,0,1,5.673-9.771,10.289,10.289,0,0,1-1.57-1.6A13.437,13.437,0,0,0,3.565,27.8c0,1.448.793,3.467,4.571,4.858A26.624,26.624,0,0,0,17,34a26.624,26.624,0,0,0,8.864-1.345c3.778-1.391,4.571-3.409,4.571-4.858A13.437,13.437,0,0,0,24.153,16.429Z'/%3E%3Cpath d='M17,17.865c4.234,0,7.495-4.093,7.495-8.932S21.232,0,17,0,9.505,4.093,9.505,8.932,12.767,17.865,17,17.865ZM17,2.179c2.931,0,5.316,3.03,5.316,6.754S19.931,15.686,17,15.686s-5.316-3.03-5.316-6.754S14.069,2.179,17,2.179Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 1026px){
+    .container :global(.vtex-button__label)::before{
+        width: 100%;
+        height: 30px;
+        background-size: 26px 26px;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .container :global(.vtex-button__label)::before{
+        width: 30px;
+        height: 30px;
+        background-size: 26px 26px;
+        filter: invert(1)
+    }
+}
+
+.container :global(.vtex-button__label) > span{
+    margin: 0;
+}
+
+
+@media screen and (min-width: 1026px){
+    .label,
+    .profile{
+        padding: 0;
+        color: #000000;
+        font-size: 11px;
+        font-weight: 500;
+        width: 100%;
+        margin-top: 0;
+        text-transform: none;
+    }
+}
+
+
+/* Dropbox */
+@media screen and (min-width: 1026px){
+    .box{
+        right: -92px !important;
+    }
+}
+
+.accountOptions :global(.vtex-login-2-x-button):hover,
+.accountOptions :global(.vtex-login-2-x-button):focus{
+    color: #333333;
+}
+
+.accountOptions :global(.vtex-button__label) span,
+.accountOptions :global(.vtex-login-2-x-button) span{
+    font-size: 13px;
+}

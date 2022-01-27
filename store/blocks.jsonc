@@ -1,0 +1,74 @@
+{
+  "store.not-found#product": {
+    "blocks": [
+      "flex-layout.row#not-found"
+    ]
+  },
+
+  "store.not-found#search": {
+    "blocks": [
+      "flex-layout.row#not-found"
+    ]
+  },
+
+  "flex-layout.row#not-found": {
+    "children": [
+      "flex-layout.col#not-found"
+    ],
+    "props": {
+      "colGap": 0,
+      "rowGap": 0,
+      "marginTop": 9,
+      "marginBottom": 9
+    }
+  },
+
+  "flex-layout.col#not-found": {
+    "children": [
+      "rich-text#not-found-title",
+      "rich-text#not-found-subtitle",
+      "rich-text#not-found-text",
+      "rich-text#not-found-goHome"
+    ],
+    "props": {
+      "colGap": 0,
+      "rowGap": 0
+    }
+  },
+
+  "rich-text#not-found-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "\n\nNão foram encontrados resultados",
+      "blockClass": "not-found-title"
+    }
+  },
+
+  "rich-text#not-found-subtitle": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "\n\nO que posso fazer?",
+      "blockClass": "not-found-subtitle"
+    }
+  },
+
+  "rich-text#not-found-text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "» Utilize nossa busca para encontrar o que deseja\n\n» Navegue por nossos departamentos\n\n» Volte para a página inicial e continue navegando",
+      "blockClass": "not-found-text"
+    }
+  },
+
+  "rich-text#not-found-goHome": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Voltar para Página Inicial](/)",
+      "blockClass": "not-found-goHome"
+    }
+  }
+}

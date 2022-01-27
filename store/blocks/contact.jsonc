@@ -1,0 +1,101 @@
+{
+  "store.custom#contact-us": {
+    "children": [
+      "flex-layout.row#contact-us"
+    ]
+  },
+
+  "flex-layout.row#contact-us": {
+    "props": {
+      "blockClass": "contact"
+    },
+    "children": [
+      "flex-layout.col#contact-us"
+    ]
+  },
+
+  "flex-layout.col#contact-us": {
+    "children": [
+      "rich-text#contact-us",
+      "form#contact-us"
+    ]
+  },
+  "rich-text#contact-us": {
+    "props": {
+      "text": "## Fale Conosco"
+    }
+  },
+
+  "form#contact-us": {
+    "children": [
+      "form-input.text#name",
+      "form-input.text#email",
+      "form-input.text#phone",
+      "form-input.text#subject",
+      "form-input.text#orderNumber",
+      "form-input.textarea#message",
+
+      "form-submit#contact"
+    ],
+    "blocks": ["form-success#contact-us"],
+    "props": {
+      "entity": "contato",
+      "schema": "contato"
+    }
+  },
+
+  "form-success#contact-us": {
+    "children": [
+      "rich-text#success-submit"
+    ]
+  },
+  "rich-text#success-submit": {
+    "props": {
+      "text": "Agradecemos seu contato! Voltaremos em breve.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "form-input.text#name": {
+    "props": {
+      "pointer": "#/properties/name"
+    }
+  },
+
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+
+  "form-input.text#phone": {
+    "props": {
+      "pointer": "#/properties/phone"
+    }
+  },
+
+  "form-input.text#subject": {
+    "props": {
+      "pointer": "#/properties/subject"
+    }
+  },
+
+  "form-input.text#orderNumber": {
+    "props": {
+      "pointer": "#/properties/orderNumber"
+    }
+  },
+
+  "form-input.textarea#message": {
+    "props": {
+      "pointer": "#/properties/message"
+    }
+  },
+
+  "form-submit#contact": {
+    "props": {
+      "label": "Submit"
+    }
+  }
+}

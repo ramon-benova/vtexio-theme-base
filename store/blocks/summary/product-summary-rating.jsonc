@@ -1,0 +1,13 @@
+{
+    "flex-layout.row#product-rating": {
+        "children": [
+            "product-rating-inline"
+        ],
+        "props": {
+            "blockClass": "rating-summary",
+            "fullWidth": false,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.font{
+    font-family: "Poppins";
+}
+
+.orderHeaderLabel{
+    font-size: 12px;
+    line-height: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.orderHeaderValue{
+    color: #de1519;
+    font-weight: bold;
+}
+
+.orderProduct{
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 15px 15px 0;
+    width: calc(100% - 15px);
+}
+
+
+.orderProduct:nth-child(odd){
+    background: #f2f4f5;
+}
+
+.ordersList{
+    min-width: 200px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.orderProductName{
+    font-size: 12px;
+    line-height: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.orderProductShipping{
+    font-size: 13px;
+    line-height: 20px;
+    color: #27ae60;
+    font-weight: 500;
+}
+
+.orderProductQuantityValue{
+    color: #de1519;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.productTable{
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+.productRow{
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 15px 15px 0;
+    width: calc(100% - 15px);
+}
+
+.productRow:nth-child(odd){
+    background: #f2f4f5;
+}
+
+.productInfo,
+.productPrice,
+.productQuantity,
+.productTotalPrice{
+    padding: 15px;
+    font-size: 12px;
+}
+
+.productName{
+    font-size: 12px;
+    line-height: 20px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.productTotalPrice{
+    color: #de1519;
+    font-weight: bold;
+}
+
+
+.detailsBtn{
+    transition: .3s;
+    background: #27ae60;
+    border-radius: 30px;
+    padding: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    height: auto;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 40px 0 0 0;
+    text-decoration: none;
+    user-select: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.invoiceBtn{
+    padding: 10px;
+    border-radius: 8px;
+    justify-content: center;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #ffb400;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.invoiceBtn:hover{
+    background: #ffb400;
+    color: #333333;
+    opacity: .8;
+}

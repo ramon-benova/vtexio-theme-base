@@ -1,0 +1,111 @@
+/* Preço De */
+.listPrice--pdp{
+  font-size: 12px;
+  line-height: 13px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1026px){
+  .listPrice--pdp{
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+
+
+/* Melhor preço */
+.sellingPrice--pdp{
+  font-size: 20px;
+  line-height: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 1026px){
+  .sellingPrice--pdp{
+    font-size: 26px;
+    line-height: 26px;
+    height: 26px;
+  }
+}
+
+
+/* Melhor preço */
+.spotPrice--pdp{
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 600;
+  height: 16px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1026px){
+  .spotPrice--pdp{
+    height: 17px;
+    margin-top: 10px;
+  }
+}
+
+.spotPriceValue--pdp{
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media screen and (min-width: 1026px){
+  .spotPriceValue--pdp{
+    font-size: 17px;
+    line-height: 17px;
+  }
+}
+
+
+/* Parcelamento */
+.installments--pdp{
+  font-size: 11px;
+  line-height: 11px;
+  height: 11px;
+
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1026px){
+  .installments--pdp{
+    font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+
+    margin-top: 8px;
+  }
+}
+
+.installmentsNumber--pdp,
+.installmentValue--pdp{
+  font-weight: 600;
+}
+
+
+
+
+
+/* Desconto */
+.savings--pdp{
+  font-size: 9px;
+  line-height: 10px;
+  border-radius: 0 8px 0 8px;
+  padding: 6px 8px;
+  color: #FFFFFF;
+  background-color: #27ae60;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 1026px){
+  .savings--pdp{
+    font-size: 10px;
+    line-height: 11px;
+  }
+}

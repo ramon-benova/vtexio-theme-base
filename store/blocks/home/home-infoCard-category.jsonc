@@ -1,0 +1,140 @@
+{
+    "flex-layout.row#home-infoCard-category": {
+        "children": [
+            "slider-layout#category-imagesText"
+        ],
+        "props": {
+            "blockClass": [
+                "home-container",
+                "home-infoCard-category"
+            ]
+        }
+    },
+
+    "slider-layout#category-imagesText": {
+        "children": [
+            "info-card#home-infoCard-category-01",
+            "info-card#home-infoCard-category-02",
+            "info-card#home-infoCard-category-03",
+            "info-card#home-infoCard-category-04",
+            "info-card#home-infoCard-category-05",
+            "info-card#home-infoCard-category-06",
+            "info-card#home-infoCard-category-07",
+            "info-card#home-infoCard-category-08"
+        ],
+        "props": {
+            "itemsPerPage": {
+                "desktop": 8,
+                "tablet": 4,
+                "mobile": 4
+            },
+            "blockClass": "infoCard-home-list",
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": true,
+            "fullWidth": false,
+            "arrowSize": 12
+        }
+    },
+
+
+
+
+    /* Imagens */
+    "info-card#home-infoCard-category-01": {
+        "props": {
+            "blockClass": "infoCard-home-item",
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/banner-home-category.png",
+            "headline": "Categoria",
+            "callToActionUrl": "#",
+            "callToActionMode": "none",
+            "linkTarget": "_self"
+        }
+    },
+
+    "info-card#home-infoCard-category-02": {
+        "props": {
+            "blockClass": "infoCard-home-item",
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/banner-home-category.png",
+            "headline": "Categoria",
+            "callToActionUrl": "#",
+            "callToActionMode": "none",
+            "linkTarget": "_self"
+        }
+    },
+
+    "info-card#home-infoCard-category-03": {
+        "props": {
+            "blockClass": "infoCard-home-item",
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/banner-home-category.png",
+            "headline": "Categoria",
+            "callToActionUrl": "#",
+            "callToActionMode": "none",
+            "linkTarget": "_self"
+        }
+    },
+
+    "info-card#home-infoCard-category-04": {
+        "props": {
+            "blockClass": "infoCard-home-item",
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/banner-home-category.png",
+            "headline": "Categoria",
+            "callToActionUrl": "#",
+            "callToActionMode": "none",
+            "linkTarget": "_self"
+        }
+    },
+
+    "info-card#home-infoCard-category-05": {
+        "props": {
+            "blockClass": "infoCard-home-item",
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/banner-home-category.png",
+            "headline": "Categoria",
+            "callToActionUrl": "#",
+            "callToActionMode": "none",
+            "linkTarget": "_self"
+        }
+    },
+
+    "info-card#home-infoCard-category-06": {
+        "props": {
+            "blockClass": "infoCard-home-item",
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/banner-home-category.png",
+            "headline": "Categoria",
+            "callToActionUrl": "#",
+            "callToActionMode": "none",
+            "linkTarget": "_self"
+        }
+    },
+
+    "info-card#home-infoCard-category-07": {
+        "props": {
+            "blockClass": "infoCard-home-item",
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/banner-home-category.png",
+            "headline": "Categoria",
+            "callToActionUrl": "#",
+            "callToActionMode": "none",
+            "linkTarget": "_self"
+        }
+    },
+
+    "info-card#home-infoCard-category-08": {
+        "props": {
+            "blockClass": "infoCard-home-item",
+            "isFullModeStyle": false,
+            "imageUrl": "/arquivos/banner-home-category.png",
+            "headline": "Categoria",
+            "callToActionText": "Categoria",
+            "callToActionUrl": "#",
+            "callToActionMode": "none",
+            "linkTarget": "_self"
+        }
+    }
+}

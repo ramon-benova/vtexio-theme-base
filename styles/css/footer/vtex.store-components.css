@@ -1,0 +1,16 @@
+/*  Segurança */
+.imageElement--footer-security--img{
+    margin: 0 20px 20px 0;
+    align-self: center;
+}
+
+/*  Métodos de Pagamento */
+.imageElement--footer-payment--img{
+    margin: 8px 8px 0 0;
+    align-self: center;
+}
+
+/* Desenvolvido Por */
+.imageElement--footer-developedBy--img{
+    align-self: center;
+}

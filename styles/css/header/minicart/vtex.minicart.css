@@ -1,0 +1,195 @@
+.minicartContainer :global(.vtex-button__label){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+@media screen and (min-width: 1026px){
+    .minicartContainer :global(.vtex-button__label){
+        padding: 0 0 0 15px;
+    }
+}
+
+
+@media screen and (min-width: 1367px){
+    .minicartContainer :global(.vtex-button__label)::after{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1026px){
+    .minicartContainer :global(.vtex-button__label)::after{
+        content: "Minha casa";
+        color: #000000;
+        font-size: 11px;
+        font-weight: 500;
+        width: 100%;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        margin-top: 0;
+        text-transform: none;
+    }
+}
+
+.minicartIconContainer{
+    height: 30px;
+}
+
+.openIconContainer{
+    padding: 0;
+}
+
+.openIconContainer :global(.vtex-button):hover{
+    background-color: transparent;
+}
+
+.minicartQuantityBadgeDefault{
+    background: #FFFFFF;
+    color: #DE1519;
+    font-size: 10px;
+    line-height: 1px;
+    font-weight: 600;
+    top: 6px;
+    right: -20px;
+}
+
+@media screen and (min-width: 1026px){
+    .minicartQuantityBadgeDefault{
+        background: #DE1519;
+        color: #FFFFFF;
+        font-weight: 500;
+    }
+}
+
+
+
+
+/* Resumo do Carrinho */
+.drawerContent{
+    position: relative;
+}
+
+
+/* Resumo do Carrinho - Header */
+.minicartTitle{
+    margin: 0 20px 15px 15px;
+    padding: 20px 0 10px 0;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C7C6C6;
+}
+
+.minicartTitle::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 33.291 29.17'%3E%3Cpath d='M33.692,15.656,17.859,2.928a.815.815,0,0,0-1.017,0L1.01,15.656a.791.791,0,0,0-.3.569.8.8,0,0,0,.21.61l3.145,3.47a.812.812,0,0,0,.6.264.8.8,0,0,0,.495-.176l.264-.224V31.137a.817.817,0,0,0,.84.786h22.17a.817.817,0,0,0,.84-.786V20.17l.264.224a.8.8,0,0,0,1.1-.088l3.145-3.47a.8.8,0,0,0,.2-.61A.81.81,0,0,0,33.692,15.656ZM19.859,30.3H14.843V21.621h5.015Zm7.794,0H21.485V20.841a.857.857,0,0,0-.827-.847H14.043a.857.857,0,0,0-.827.847V30.3H7.049V18.862l10.3-8.255,10.3,8.255Zm2.3-11.651L17.859,8.933a.8.8,0,0,0-.508-.176.841.841,0,0,0-.508.176L4.751,18.645,2.7,16.382,17.351,4.609,32,16.382Z' transform='translate(-0.709 -2.75)' fill='%23000'%3E%3C/path%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    display: block;
+    margin-right: 12px;
+}
+
+.minicartTitle::after{
+    content: "Minha Casa";
+    font-size: 16px;
+    line-height: 16px;
+    position: relative;
+    top: 1px;
+    font-weight: 500;
+    color: #212529;
+}
+
+.closeIconContainer {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.closeIconButton{
+    padding: 0;
+}
+
+.closeIconButton::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23ad3d39;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(13.5 13.5)'%3E%3Cg transform='translate(-13.5 -13.5)'%3E%3Cpath class='a' d='M13.5,27A13.5,13.5,0,1,1,27,13.5,13.515,13.515,0,0,1,13.5,27Zm0-25.072A11.572,11.572,0,1,0,25.072,13.5,11.585,11.585,0,0,0,13.5,1.928Zm0,0'/%3E%3Cpath class='a' d='M156.894,157.86a.961.961,0,0,1-.682-.283l-9.643-9.643a.964.964,0,1,1,1.363-1.363l9.643,9.643a.964.964,0,0,1-.682,1.646Zm0,0' transform='translate(-138.573 -138.574)'/%3E%3Cpath class='a' d='M147.25,157.858a.964.964,0,0,1-.682-1.646l9.643-9.643a.964.964,0,1,1,1.363,1.363l-9.643,9.643A.961.961,0,0,1,147.25,157.858Zm0,0' transform='translate(-138.572 -138.572)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    display: block;
+}
+
+.closeIconButton :global(.vtex-minicart-2-x-closeIcon){
+    display: none;
+}
+
+
+/* Resumo do Carrinho - Conteúdo */
+.minicartProductListContainer{
+    padding: 0 15px;
+    margin: 0;
+}
+
+.minicartProductListContainer::-webkit-scrollbar-track {
+    background-color: #e9e9e9
+}
+
+.minicartProductListContainer::-webkit-scrollbar {
+    width: 4px;
+    background: #e9e9e9;
+}
+
+.minicartProductListContainer::-webkit-scrollbar-thumb {
+    background: #27ae60
+}
+
+
+
+
+
+
+/* Resumo do Carrinho - Footer */
+.minicartSummary{
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1026px){
+    .minicartSummary{
+        font-size: 13px;
+    }
+}
+
+.summaryItemContainer{
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1026px){
+    .summaryItemContainer{
+        font-size: 18px;
+    }
+}
+
+
+
+.minicartCheckoutButton :global(.vtex-button){
+    border-radius: 30px;
+    background: #27ae60;
+    color: #FFFFFF;
+    border: 0;
+    box-shadow: 2px 2px 0 0 #00000029;
+    font-weight: 600;
+
+    height: 44px;
+    font-size: 14px;
+}
+
+.minicartCheckoutButton :global(.vtex-button):hover{
+    background: #27ae60;
+    color: #FFFFFF;
+}

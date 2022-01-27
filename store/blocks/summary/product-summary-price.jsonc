@@ -1,0 +1,106 @@
+{
+    "flex-layout.row#product-listPrice-summary": {
+        "children": [
+            "product-list-price#summary",
+            "flex-layout.row#product-priceSaving-summary"
+        ],
+        "props": {
+            "blockClass": "listPrice-summary",
+            "fullWidth": false,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false,
+            "colSizing": "auto"
+        }
+    },
+
+    "product-list-price#summary": {
+        "props": {
+            "blockClass": "summary",
+            "message": "de {listPriceValue}",
+            "alwaysShow": true
+        }
+    },
+
+    "flex-layout.row#product-sellingPrice-summary": {
+        "children": [
+            "product-selling-price#summary"
+        ],
+        "props": {
+            "blockClass": "sellingPrice-summary",
+            "fullWidth": false,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false
+        }
+    },
+
+    "product-selling-price#summary": {
+        "props": {
+            "blockClass": "summary",
+            "message": "{sellingPriceValue}",
+            "alwaysShow": true
+        }
+    },
+
+    "flex-layout.row#product-spotPrice-summary": {
+        "children": [
+            "product-spot-price#summary"
+        ],
+        "props": {
+            "blockClass": "spotPrice-summary",
+            "fullWidth": false,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false
+        }
+    },
+
+    "product-spot-price#summary": {
+        "props": {
+            "blockClass": "summary",
+            "message": "ou {spotPriceValue} à vista",
+            "alwaysShow": true
+        }
+    },
+
+    "flex-layout.row#product-installments-summary": {
+        "children": [
+            "product-installments#summary"
+        ],
+        "props": {
+            "blockClass": "installments-summary",
+            "fullWidth": false,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false
+        }
+    },
+
+    "product-installments#summary": {
+        "props": {
+            "blockClass": "summary",
+            "message": "{installmentsNumber}x de {installmentValue}",
+            "installmentsCriteria": "max-quantity-without-interest",
+            "alwaysShow": true
+        }
+    },
+
+    "flex-layout.row#product-priceSaving-summary": {
+        "children": [
+            "product-price-savings#summaryPercentage"
+        ],
+        "props": {
+            "blockClass": "priceSaving-summary",
+            "fullWidth": false,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true
+        }
+    },
+
+    "product-price-savings#summaryPercentage": {
+        "props": {
+            "message": "-{savingsPercentage}",
+            "minimumPercentage": 1,
+            "blockClass": "summary",
+            "alwaysShow": true
+        }
+    }
+}

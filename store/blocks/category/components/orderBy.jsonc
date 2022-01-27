@@ -1,0 +1,13 @@
+{
+    "flex-layout.row#category-orderBy": {
+        "children": [
+            "order-by.v2"
+        ],
+        "props": {
+            "horizontalAlign": "right",
+            "preventHorizontalStretch": true,
+            "blockClass": "orderBy",
+            "colGap": 0
+        }
+    }
+}

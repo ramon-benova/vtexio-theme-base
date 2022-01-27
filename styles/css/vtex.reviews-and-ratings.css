@@ -1,0 +1,25 @@
+/* Estrelas */
+.inlineContainer{
+  margin: 0 0 5px 0;
+  font-size: 0;
+  line-height: 0;
+  text-align: left;
+}
+
+.stars{
+  font-size: 0;
+  line-height: 0;
+}
+
+.star{
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.star--filled {
+  color: #FFB100;
+}
+
+.star--empty {
+  color: #FFB100;
+}

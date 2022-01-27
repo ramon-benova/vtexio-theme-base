@@ -1,0 +1,99 @@
+{
+    "flex-layout.col#pdp-available": {
+        "children": [
+            //Nome do Produto
+            "flex-layout.row#pdp-name",
+
+            //Cód. Referencia / Avaliação
+            "flex-layout.row#pdp-ref-rating",
+
+            //Preços / Wishlist
+            "flex-layout.row#pdp-priceAndWishlist",
+
+            //Variantes
+            "sku-selector#pdp",
+
+            //Quantidade / Botão Comprar
+            "flex-layout.row#pdp-qty-buyButton",
+
+            //Customizar Produtos
+            "product-assembly-options",
+
+            //Presente
+            // "product-gifts",
+
+            //Avise-me
+            "availability-subscriber",
+
+            //Frete
+            "shipping-simulator#pdp",
+
+            //Compartilhar
+            "share#pdp"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "colSizing": "auto",
+            "colGap": 0,
+            "rowGap": 0,
+            "blockClass": "productInfo--pdp"
+        }
+    },
+
+    "flex-layout.row#pdp-ref-rating": {
+        "children": [
+            //Cód. de Referencia
+            "flex-layout.col#pdp-ref",
+
+            //Estrelas
+            "flex-layout.col#pdp-rating"
+        ],
+        "props": {
+            "blockClass": "ref-rating--pdp",
+            "preserveLayoutOnMobile": true,
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "colSizing": "auto",
+            "colGap": 0,
+            "rowGap": 0
+        }
+    },
+
+    "flex-layout.row#pdp-priceAndWishlist": {
+        "children": [
+            //Preços
+            "flex-layout.col#pdp-price",
+            "flex-layout.row#pdp-wishlist"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "colSizing": "auto",
+            "marginTop": 0,
+            "marginBottom": 0,
+            "blockClass": "productPrice--pdp"
+        }
+    },
+
+    "flex-layout.row#pdp-qty-buyButton": {
+        "children": [
+            "flex-layout.row#pdp-quantity",
+            "add-to-cart-button#pdp"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": false,
+            "colSizing": "auto",
+            "marginTop": 0,
+            "marginBottom": 6,
+            "rowGap": 0,
+            "colGap": 0,
+            "blockClass": "qty-buyButton"
+        }
+    }
+
+}

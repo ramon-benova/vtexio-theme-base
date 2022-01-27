@@ -1,0 +1,11 @@
+{
+    "flex-layout.col#category-title": {
+        "children": [
+            "search-title.v2"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "verticalAlign": "middle"
+        }
+    }
+}

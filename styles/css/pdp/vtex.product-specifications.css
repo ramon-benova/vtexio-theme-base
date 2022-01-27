@@ -1,0 +1,73 @@
+@media screen and (min-width: 1026px){
+  .specificationName {
+    color: #333333;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+
+@media screen and (max-width: 1025px){
+  .specificationName{
+    font-weight: 600;
+    margin: 0;
+    background: #de1519;
+    color: #FFF;
+    padding: 12px 15px;
+    border-radius: 10px 10px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.specificationValue{
+  font-weight: 400;
+  color: #212529;
+}
+
+@media screen and (min-width: 1026px){
+  .specificationValue{
+    font-size: 13px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .specificationValue{
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+
+/* Tabela Customizada */
+.specificationValue :global(.vtex-bnv-table-tr):nth-child(odd){
+  background: #f9f9f9;
+}
+
+.specificationValue :global(.vtex-bnv-table-tr) :global(.vtex-bnv-table-td){
+  padding: 8px 16px;
+  color: #666;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 1026px){
+  .specificationValue :global(.vtex-bnv-table-tr) :global(.vtex-bnv-table-td){
+    font-size: 13px;
+  }
+}
+
+
+.specificationValue :global(.vtex-bnv-table-tr) :global(.vtex-bnv-table-td):first-child{
+  width: 30%;
+}
+
+.specificationValue :global(.vtex-bnv-table-tr) :global(.vtex-bnv-table-td):last-child{
+  width: 70%;
+}

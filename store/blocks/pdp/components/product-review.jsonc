@@ -1,0 +1,34 @@
+{
+    "flex-layout.row#pdp-reviews": {
+        "children": [
+            "flex-layout.col#pdp-reviews"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": false,
+            "colSizing": "auto",
+            "colGap": 0,
+            "rowGap": 0
+        }
+    },
+
+    "flex-layout.col#pdp-reviews": {
+        "children": [
+            "product-reviews"
+        ],
+        "props": {
+            "preventVerticalStretch": false,
+            "colSizing": "auto",
+            "width": "100%",
+            "colGap": 0,
+            "rowGap": 0
+        }
+    },
+
+    "store.product-review-form": {
+        "blocks": [
+            "product-review-form"
+        ]
+    }
+}

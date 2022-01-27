@@ -1,0 +1,10 @@
+{
+    "product-specification-badges": {
+        "props": {
+          "specificationGroupName": "Group",
+          "specificationName": "On Sale",
+          "visibleWhen": "True",
+          "displayValue": "SPECIFICATION_NAME"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "flex-layout.col#pdp-image": {
+    "children": [
+      "product-images"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "colGap": 0,
+      "rowGap": 0,
+      "colSizing": "auto"
+    }
+  },
+
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": false,
+      "showNavigationArrows": false,
+      "hiddenImages": ["Cores", "cores"],
+      "maxHeight": "500px",
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      }
+    }
+  }
+}

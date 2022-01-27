@@ -1,0 +1,62 @@
+{
+  "flex-layout.col#footer-security": {
+    "children": [
+      "rich-text#footer-security-title",
+      "vtex.menu@2.x:menu#footer-security-content"
+    ],
+    "props": {
+      "blockClass": ["footer-col", "footer-text", "footer-security"],
+      "preventVerticalStretch": true
+    }
+  },
+
+
+  //Título
+  "rich-text#footer-security-title": {
+    "props": {
+      "text": "Seguranca",
+      "blockClass": "footer-title"
+    }
+  },
+
+
+
+  //Conteúdo
+  "vtex.menu@2.x:menu#footer-security-content": {
+    "children": [
+      "image#site-seguro",
+      "image#google-safe-browsing",
+      "sandbox#seloEbit"
+    ],
+    "props": {
+      "blockClass": "footer-security-content",
+      "orientation": "horizontal"
+    }
+  },
+
+  "sandbox#seloEbit": {
+    "props": {
+      "width": "70px",
+      "height": "95px",
+      "initialContent": "<a id='seloEbit' href='http://www.ebit.com.br/116179' target='_blank' data-noop='redir(this.href);'></a> <script type='text/javascript' id='getSelo' src='https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?116179'> </script>",
+      "allowCookies": true
+    }
+  },
+
+  "image#site-seguro": {
+    "props": {
+      "src": "/arquivos/selo-compra-segura-white.png",
+      "maxWidth": 95,
+      "blockClass": "footer-security--img"
+    }
+  },
+
+  "image#google-safe-browsing": {
+    "props": {
+      "src": "/arquivos/selo-google-safe-browsing-white.png",
+      "maxWidth": 95,
+      "link": "https://transparencyreport.google.com/safe-browsing/search?url=",
+      "blockClass": "footer-security--img"
+    }
+  }
+}

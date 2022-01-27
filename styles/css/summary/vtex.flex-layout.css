@@ -1,0 +1,58 @@
+/* Avaliação */
+.flexRow--rating-summary{
+    height: 26px;
+}
+
+
+/* Preço De */
+.flexRow--listPrice-summary{
+    height: 11px;
+    margin-bottom: 6px;
+}
+
+@media screen and (min-width: 1026px){
+    .flexRow--listPrice-summary{
+        height: 12px;
+        margin-bottom: 6px;
+    }
+}
+
+/* Preço Por */
+.flexRow--sellingPrice-summary{
+    height: 15px;
+    margin-top: 7px;
+}
+
+@media screen and (min-width: 1026px){
+    .flexRow--sellingPrice-summary{
+        height: 15px;
+        margin-top: 7px;
+    }
+}
+
+
+/* Preço à vista */
+.flexRow--spotPrice-summary{
+    height: 15px;
+    margin-top: 7px;
+}
+
+@media screen and (min-width: 1026px){
+    .flexRow--spotPrice-summary{
+        height: 15px;
+        margin-top: 7px;
+    }
+}
+
+/* Preço Parcelamento */
+.flexRow--installments-summary{
+    height: 16px;
+    margin-top: 3px;
+}
+
+@media screen and (min-width: 1026px){
+    .flexRow--installments-summary{
+        height: 16px;
+        margin-top: 3px;
+    }
+}

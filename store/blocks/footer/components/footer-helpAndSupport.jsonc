@@ -1,0 +1,142 @@
+{
+  "flex-layout.col#footer-helpAndSupport": {
+    "children": [
+      "responsive-layout.desktop#helpAndSupport",
+      "responsive-layout.mobile#helpAndSupport"
+    ]
+  },
+
+  "responsive-layout.desktop#helpAndSupport": {
+    "children": ["flex-layout.col#footer-helpAndSupport-desktop"]
+  },
+
+  "responsive-layout.mobile#helpAndSupport": {
+    "children": ["flex-layout.col#footer-helpAndSupport-mobile"]
+  },
+
+
+  //Desktop
+  "flex-layout.col#footer-helpAndSupport-desktop": {
+    "children": [
+      "rich-text#footer-helpAndSupport-title",
+      "vtex.menu@2.x:menu#footer-helpAndSupport-content"
+    ],
+    "props": {
+      "blockClass": ["footer-col", "footer-text", "footer-helpAndSupport"],
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#footer-helpAndSupport-title": {
+    "props": {
+      "text": "Ajuda e Suporte",
+      "blockClass": "footer-title"
+    }
+  },
+
+
+  //Mobile
+  "flex-layout.col#footer-helpAndSupport-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-helpAndSupport-mobile"
+    ],
+    "props": {
+      "blockClass": ["footer-col", "footer-text", "footer-helpAndSupport"],
+      "preventVerticalStretch": true
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-helpAndSupport-mobile": {
+    "children": [
+      "menu-item#footer-helpAndSupport-mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#footer-helpAndSupport-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-title",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Ajuda e Suporte",
+        "text": "Ajuda e Suporte"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#footer-helpAndSupport-content-mobile"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#footer-helpAndSupport-content-mobile":{
+    "children": [
+      "vtex.menu@2.x:menu#footer-helpAndSupport-content"
+    ]
+  },
+
+
+  //Conteúdo
+  "vtex.menu@2.x:menu#footer-helpAndSupport-content": {
+    "children": [
+      "menu-item#politica-de-devolucao",
+      "menu-item#politica-de-entrega",
+      "menu-item#politica-de-privacidade"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#politica-de-devolucao": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-devolucao",
+        "noFollow": false,
+        "tagTitle": "Política de Devolução",
+        "text": "Política de Devolução"
+      }
+    }
+  },
+
+  "menu-item#politica-de-entrega": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-entrega",
+        "noFollow": false,
+        "tagTitle": "Política de Entrega",
+        "text": "Política de Entrega"
+      }
+    }
+  },
+  "menu-item#politica-de-privacidade": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-privacidade",
+        "noFollow": false,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      }
+    }
+  }
+}

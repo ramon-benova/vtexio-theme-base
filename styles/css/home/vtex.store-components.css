@@ -1,0 +1,165 @@
+/* InfoCard - Exibição em Coluna */
+.infoCardContainer--infoCard-home-item{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0 10px;
+    background: transparent;
+}
+
+@media screen and (min-width: 1026px){
+    .infoCardContainer--infoCard-home-item{
+        padding: 20px;
+    }
+}
+
+
+/* InfoCard - Título/Subtitulo */
+.infoCardTextContainer--infoCard-home-item{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+/* InfoCard - Título */
+.infoCardHeadline--infoCard-home-item{
+    color: #333;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1026px){
+    .infoCardHeadline--infoCard-home-item{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+/* InfoCard - SubTítulo */
+.infoCardSubhead--infoCard-home-item{
+    color: #000000;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 1026px){
+    .infoCardSubhead--infoCard-home-item{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+
+/* InfoCard - Botão Action */
+.infoCardCallActionContainer--infoCard-home-item{
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 1026px){
+    .infoCardCallActionContainer--infoCard-home-item{
+        margin-top: 25px;
+    }
+}
+
+.infoCardCallActionText--infoCard-home-item{
+    color: #000000;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 6px 25px;
+}
+
+@media screen and (min-width: 1026px){
+    .infoCardCallActionText--infoCard-home-item{
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .infoCardCallActionText--infoCard-home-item,
+    .infoCardCallActionText--infoCard-home-item:active,
+    .infoCardCallActionText--infoCard-home-item:hover,
+    .infoCardCallActionText--infoCard-home-item:focus,
+    .infoCardCallActionText--infoCard-home-item::link,
+    .infoCardCallActionText--infoCard-home-item:visited{
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .infoCardCallActionText--infoCard-home-item:hover{
+        background: #000000;
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+/* Banners Home - Mosaico */
+.imageElement--banner-home-mosaic-img{
+    padding: 4px;
+    width: calc(100% - 8px);
+}
+
+.imageElementLink--banner-home-mosaic-img{
+    position: relative;
+    display: block;
+}
+
+@media screen and (min-width: 1026px){
+    .imageElementLink--banner-home-mosaic-img::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        background: #2125296b;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .imageElementLink--banner-home-mosaic-img:hover::before {
+        opacity: 1;
+    }
+
+    .imageElementLink--banner-home-mosaic-img::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(255,255,255,0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 20;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .imageElementLink--banner-home-mosaic-img:hover::after {
+        opacity: 1;
+        width: 75%;
+        height: 75%;
+    }
+}

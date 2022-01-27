@@ -1,0 +1,345 @@
+:global(.vtex-account){
+    background-color: #f5f5f5;
+}
+
+
+@media screen and (min-width: 1026px){
+    :global(.vtex-account__page){
+        padding-left: 1.5rem
+    }
+}
+
+
+:global(.vtex-account) > div {
+    margin: auto;
+    max-width: 1320px;
+    padding: 24px 20px;
+}
+
+:global(.vtex-account) :global(.vtex-button){
+    border-radius: 8px;
+    min-height: 40px;
+    outline: none;
+}
+
+:global(.vtex-account) :global(.vtex-button__label){
+    font-size: 13px;
+    text-transform: none;
+}
+
+@media screen and (min-width: 1026px){
+    :global(.vtex-account .vtex-button__label){
+        font-size: 14px;
+        text-transform: none;
+        padding: 5px 15px !important;
+    }
+}
+
+:global(.vtex-account) :global(.vtex-input-prefix__group){
+    border: 0;
+}
+
+:global(.vtex-account) :global(.vtex-input-prefix__group) input,
+:global(.vtex-account) :global(.vtex-input-prefix__group) select,
+:global(.vtex-account) :global(.vtex-input-prefix__group) textarea{
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 13px;
+}
+
+:global(.vtex-account) :global(.vtex-dropdown__label),
+:global(.vtex-account) :global(.vtex-input__label),
+:global(.vtex-account) :global(.vtex-checkbox__label){
+    font-size: 13px;
+    font-weight: 300;
+    font-family: "Poppins" !important;
+}
+
+.addressList,
+:global(.vtex-account__cards-list){
+    min-width: 200px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.addressList span,
+:global(.vtex-account__cards-list) span{
+    font-size: 15px;
+    line-height: 22px;
+    color: #333;
+}
+
+.boxContainer,
+:global(.vtex-account__create-card){
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 26px;
+}
+
+.boxContainer{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.boxContainerBody{
+    padding: 0;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.boxContainerFooter{
+    padding: 26px 0 0 0;
+}
+
+.boxContainerFooter :global(.vtex-button){
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px 15px!important;
+    text-transform: none;
+}
+
+.boxContainerFooter :global(.vtex-button__label){
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+
+.menu{
+    padding: 0;
+}
+
+.menuLinks,
+.userInfo{
+    background-color: #fff;
+    min-width: 326px;
+}
+
+.userInfo{
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+    padding: 24px 16px 16px;
+}
+
+@media screen and (min-width: 1026px){
+    .userInfo{
+        background-color: #f5f5f5;
+        padding: 16px;
+        width: auto;
+        align-items: center;
+    }
+}
+
+.userName{
+    font-size: 18px;
+}
+
+.menuLinks{
+    border-radius: 0 0 8px 8px;
+    padding: 16px;
+}
+
+@media screen and (min-width: 1026px){
+    .menuLinks{
+        min-width: 200px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+}
+
+:global(.vtex-account_menu-link){
+    font-size: 14px;
+    margin-bottom: 16px;
+    padding: 2px 8px;
+}
+
+@media screen and (min-width: 1026px){
+    :global(.vtex-account_menu-link){
+        font-size: 14px;
+        margin-bottom: 16px;
+        padding: 2px 8px;
+    }
+}
+
+.menuLinks :global(.vtex-account_menu-link){
+    color: #444;
+    font-size: 14px;
+}
+
+.menuLink{
+    border-top: 1px solid #dadada;
+    color: #de1519;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 24px 8px 8px;
+}
+
+@media screen and (min-width: 1026px){
+    .menuLink{
+        border: none;
+        font-size: 14px;
+        padding: 12px;
+        text-decoration: underline;
+    }
+}
+
+
+:global(.vtex-account__page){
+    background-color: #f5f5f5;
+    padding-top: 16px;
+    width: 100%;
+}
+
+:global(.vtex-pageHeader__container){
+    padding: 0 16px;
+}
+
+:global(.vtex-pageHeader__container) :global(.vtex-button){
+    color: #de1519;
+    font-size: 14px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background: #FFFFFF;
+}
+
+:global(.vtex-pageHeader__title){
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1026px){
+    :global(.vtex-pageHeader__title){
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+.dataEntryLabel{
+    color: #333;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.dataEntryChildren{
+    color: #8d8d8d;
+    font-size: 13px;
+}
+
+
+/* Redefinir Senha */
+.passwordBoxContainer :global(.vtex-my-account-1-x-boxContainer) :global(.vtex-my-account-1-x-boxContainerFooter) :global(.vtex-button){
+    background: #de1519;
+    border: 1px solid #de1519;
+    min-height: 32px;
+    min-width: 131px;
+}
+
+@media screen and (min-width: 1026px){
+    .passwordBoxContainer :global(.vtex-my-account-1-x-boxContainer) :global(.vtex-my-account-1-x-boxContainerFooter) :global(.vtex-button){
+        min-height: 46px;
+        width: 100%;
+    }
+}
+
+.passwordBoxContainer :global(.vtex-my-account-1-x-boxContainer) :global(.vtex-my-account-1-x-boxContainerFooter) :global(.vtex-button) :global(.vtex-button__label){
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+/* Newsletter */
+.newsletterContainerTitle{
+    padding: 0 0 16px 0;
+}
+
+.newsletterContainerMessage{
+    padding: 0 0 16px 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+/* Profile */
+:global(.vtex-profile-form-3-x-styleguideInput),
+.styleguideInput{
+    padding: 0 0 20px 0;
+}
+
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) :global(.vtex-button) {
+    background: #333;
+    border: 1px solid #333;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px 15px;
+    text-transform: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+:global(.vtex-profile-form-3-x-profileContainer) :global(.vtex-button){
+    background: #27ae60;
+    border: 0;
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+:global(.vtex-profile-form-3-x-profileContainer) :global(.vtex-button):hover{
+    background: #27ae60b3;
+}
+
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper ) :global(.vtex-button){
+    background: #333333;
+}
+
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper ) :global(.vtex-button):hover{
+    background: #333333b3;
+}
+
+
+/* Endereço */
+:global(.vtex-address-form__postalCode-forgottenURL){
+    font-size: 13px;
+}
+
+:global(.address-summary) span{
+    font-size: 13px;
+}
+
+:global(.vtex-address-form__container) > div{
+    padding-bottom: 1.5rem;
+}
+
+
+/* Sair */
+:global(.vtex-modal__confirmation) :global(.vtex-button){
+    background: #de1519;
+    border: 1px solid #de1519;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px 15px!important;
+    text-transform: none;
+}
+
+:global(.vtex-modal__confirmation) :global(.vtex-button){
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+/* My Order */
+:global(.vtex-my-orders-app-3-x-invoiceBtn) svg{
+    fill: #333;
+}

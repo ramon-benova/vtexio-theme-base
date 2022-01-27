@@ -1,0 +1,19 @@
+{
+    "flex-layout.row#pdp-wishlist":{
+        "children": [
+            "add-to-list-btn#pdp"
+        ],
+        "props": {
+            "blockClass": "pdp-wishlist",
+            "fullWidth": false,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false
+        }
+    },
+
+    "add-to-list-btn#pdp": {
+        "props": {
+            "blockClass": "pdp"
+        }
+    }
+}

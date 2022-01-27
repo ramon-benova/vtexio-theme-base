@@ -1,0 +1,33 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-top",
+      "flex-layout.row#footer-middle",
+      "flex-layout.row#footer-bottom",
+      "link.product#fixed-whatsapp"
+    ]
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-top",
+      "flex-layout.row#footer-middle",
+      "flex-layout.row#footer-bottom",
+      "link.product#fixed-whatsapp"
+    ]
+  },
+
+  "link.product#fixed-whatsapp": {
+    "props": {
+      "href": "https://api.whatsapp.com/send?phone=5527996903003",
+      "label": "Whatsapp",
+      "blockClass": "fixed-whatsapp"
+    }
+  }
+}

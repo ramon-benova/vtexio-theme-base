@@ -1,0 +1,31 @@
+/* Banner Home - Slider */
+.flexRow--banner-home-slider :global(.vtex-store-components-3-x-container){
+    max-width: 100%;
+    padding: 0;
+}
+
+/* Banner Mosaico */
+.flexRow--banner-home-mosaic :global(.vtex-store-components-3-x-container){
+    font-size: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 1026px){
+    .flexRow--banner-home-mosaic{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Banners Categorias */
+@media screen and (max-width: 1025px){
+    .flexRow--home-infoCard-category{
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+
+    .flexRow--home-infoCard-category :global(.vtex-store-components-3-x-container){
+        width: 115%;
+    }
+}

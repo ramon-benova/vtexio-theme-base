@@ -1,0 +1,27 @@
+/* Header Fixed */
+.flexRow--header-division{
+    padding-top: 167px;
+    background-color: transparent;
+}
+
+/* Header Top */
+.flexRow--header-top{
+    background: #EBEBEB;
+    transition: .3s;
+    transform: translateY(0);
+}
+
+/* Header Middle */
+.flexRow--header-middle{
+    background: #FFFFFF;
+    transition: .3s;
+    transform: translateY(0);
+    position: relative;
+    z-index: 10;
+}
+
+/* Header Bottom */
+.flexRow--header-bottom{
+    transition: .3s;
+    transform: translateY(0);
+}

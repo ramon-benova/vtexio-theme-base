@@ -1,0 +1,19 @@
+{
+    "flex-layout.row#product-wishlist-summary":{
+        "children": [
+            "add-to-list-btn#summary"
+        ],
+        "props": {
+            "blockClass": "wishlist-summary",
+            "fullWidth": false,
+            "preventHorizontalStretch": false,
+            "preventVerticalStretch": false
+        }
+    },
+
+    "add-to-list-btn#summary": {
+        "props": {
+            "blockClass": "summary"
+        }
+    }
+}

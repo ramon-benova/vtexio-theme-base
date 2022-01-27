@@ -1,0 +1,88 @@
+//Top bar
+{
+  "flex-layout.row#header-top": {
+    "children": [
+      "flex-layout.row#header-topLeft",
+      "flex-layout.row#header-topRight"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "header-top"
+    }
+  },
+
+  "flex-layout.row#header-topLeft": {
+    "children": [
+      "rich-text#header-centralDeAtendimento"
+    ],
+    "props": {
+      "fullWidth": false,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#header-topRight": {
+    "children": [
+      "link#header-meusPedidos",
+      "link#header-nossasLojasFisicas",
+      "link#header-wishlist"
+      // "link#header-faleConosco"
+    ],
+    "props": {
+      "fullWidth": false,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "header-links"
+    }
+  },
+
+  "rich-text#header-centralDeAtendimento": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "\n\nCentral de Atendimento: (27) 9 9690-3003",
+      "blockClass": "header-centralDeAtendimento"
+    }
+  },
+
+  "link#header-centralDeAtendimento": {
+    "props": {
+      "href": "https://api.whatsapp.com/send?phone=5527996903003",
+      "label": "Central de Atendimento: (27) 9 9690-3003",
+      "blockClass": "header-centralDeAtendimento"
+    }
+  },
+
+  "link#header-meusPedidos": {
+    "props": {
+      "href": "/account#/orders",
+      "label": "Meus Pedidos",
+      "blockClass": "header-meusPedidos"
+    }
+  },
+
+  "link#header-nossasLojasFisicas": {
+    "props": {
+      "href": "/nossas-lojas-fisicas",
+      "label": "Nossas Lojas Físicas",
+      "blockClass": "header-nossasLojasFisicas"
+    }
+  },
+
+  "link#header-wishlist": {
+    "props": {
+      "href": "/account/#wishlist",
+      "label": "Lista de desejos",
+      "blockClass": "header-wishlist"
+    }
+  },
+
+  "link#header-faleConosco": {
+    "props": {
+      "href": "/fale-conosco",
+      "label": "Fale conosco",
+      "blockClass": "header-faleConosco"
+    }
+  }
+}

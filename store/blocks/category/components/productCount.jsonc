@@ -1,0 +1,21 @@
+{
+    "flex-layout.col#productCount": {
+        "children": [
+            "total-products.v2"
+        ],
+        "props": {
+            "blockClass": "productCountCol",
+            "preventVerticalStretch": true,
+            "verticalAlign": "middle"
+        }
+    },
+
+    "flex-layout.row#productCountMobile": {
+        "children": [
+            "total-products.v2"
+        ],
+        "props": {
+            "blockClass": "productCountMobileRow"
+        }
+    }
+}

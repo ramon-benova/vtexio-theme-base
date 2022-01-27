@@ -1,0 +1,19 @@
+{
+    "flex-layout.col#pdp-ref": {
+        "children": [
+            "product-identifier.product"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "verticalAlign": "middle"
+        }
+    },
+
+    "product-identifier.product": {
+        "props": {
+            "label": "custom",
+            "customLabel": "SKU",
+            "idField": "skuEan"
+        }
+    }
+}

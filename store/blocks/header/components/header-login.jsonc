@@ -1,0 +1,14 @@
+{
+    "login": {
+        "props": {
+            "optionsTitle": "Minha Conta",
+            "emailAndPasswordTitle": "MINHA CONTA",
+            "accessCodeTitle": "Código de Acesso",
+            "emailPlaceholder": "E-mail",
+            "passwordPlaceholder": "Senha",
+            "showPasswordVerificationIntoTooltip": true,
+            "showIconProfile": false,
+            "logInButtonBehavior": "link"
+        }
+    }
+}

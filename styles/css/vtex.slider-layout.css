@@ -1,0 +1,38 @@
+.sliderLayoutContainer{
+  justify-content: center;
+}
+
+.sliderArrows{
+  background: #FFFFFF !important;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  box-shadow: 1px 3px 6px 2px #00000029;
+}
+
+.caretIcon{
+  color: #DC1418;
+}
+
+/* Geral */
+@media screen and (max-width: 1025px){
+  .sliderLeftArrow{
+    left: -10px;
+  }
+
+  .sliderRightArrow{
+    right: -10px;
+  }
+}
+
+
+/* Vitrines */
+@media screen and (min-width: 1026px){
+  .sliderLeftArrow--shelf{
+    left: -20px;
+  }
+
+  .sliderRightArrow--shelf{
+    right: -20px;
+  }
+}

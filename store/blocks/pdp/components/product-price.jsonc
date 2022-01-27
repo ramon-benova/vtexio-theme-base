@@ -1,0 +1,77 @@
+{
+    "flex-layout.col#pdp-price": {
+        "children": [
+            "flex-layout.row#pdp-listPrice--savings",
+            "product-selling-price#pdp",
+            "product-spot-price#pdp",
+            "product-installments#pdp"
+        ],
+        "props": {
+            "blockClass": "productPrice--pdp",
+            "preserveLayoutOnMobile": true,
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "colSizing": "auto",
+            "colGap": 0,
+            "rowGap": 0,
+            "verticalAlign": "middle"
+        }
+    },
+
+    "flex-layout.row#pdp-listPrice--savings": {
+        "children": [
+            "product-list-price#pdp",
+            "product-price-savings#pdp"
+        ],
+        "props": {
+            "fullWidth": false,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "colGap": 0,
+            "rowGap": 0
+        }
+    },
+
+    "product-list-price#pdp": {
+        "props": {
+            "blockClass": "pdp",
+            "message": "de {listPriceValue}",
+            "alwaysShow": true
+        }
+    },
+
+    "product-selling-price#pdp": {
+        "props": {
+            "blockClass": "pdp",
+            "message": "{sellingPriceValue}",
+            "alwaysShow": true
+        }
+    },
+
+    "product-spot-price#pdp": {
+        "props": {
+            "blockClass": "pdp",
+            "message": "ou {spotPriceValue} à vista",
+            "alwaysShow": true
+        }
+    },
+
+    "product-installments#pdp": {
+        "props": {
+            "blockClass": "pdp",
+            "alwaysShow": true,
+            "message": "{installmentsNumber}x de {installmentValue}",
+            "installmentsCriteria": "max-quantity-without-interest",
+            "hasInterest": true
+        }
+    },
+
+    "product-price-savings#pdp": {
+        "props": {
+            "message": "-{savingsPercentage} OFF",
+            "minimumPercentage": 1,
+            "blockClass": "pdp"
+        }
+    }
+}

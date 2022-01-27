@@ -1,0 +1,31 @@
+{
+    "store.search#category": {
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 16,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip"
+            }
+        }
+    },
+
+    "store.search#subcategory": {
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 16,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip"
+            }
+        }
+    }
+}

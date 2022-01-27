@@ -1,0 +1,11 @@
+.product-identifier{
+    font-size: 11px;
+    line-height: 11px;
+}
+
+@media screen and (min-width: 1026px){
+    .product-identifier{
+        font-size: 12px;
+        line-height: 12px;
+    }
+}

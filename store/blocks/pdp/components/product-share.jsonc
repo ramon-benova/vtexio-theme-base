@@ -1,0 +1,12 @@
+{
+  "share#pdp": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": true,
+        "Pinterest": true
+      }
+    }
+  }
+}

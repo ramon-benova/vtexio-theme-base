@@ -1,0 +1,14 @@
+{
+  "flex-layout.row#header-bottom": {
+    "children": [
+      "bnv-category-menu#desktop"
+    ],
+    "props": {
+      "blockClass": "header-bottom",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+    "title": "Contato",
+    "type": "object",
+    "properties": {
+        "orderNumber": {
+            "type": "string",
+            "maxLength": 750,
+            "title": "Número do Pedido"
+        },
+        "subject": {
+            "type": "string",
+            "maxLength": 100,
+            "title": "Assunto"
+        },
+        "name": {
+            "type": "string",
+            "maxLength": 750,
+            "title": "Nome"
+        },
+        "email": {
+            "type": "string",
+            "format": "email",
+            "title": "E-mail"
+        },
+        "phone": {
+            "type": "string",
+            "title": "Telefone"
+        },
+        "message": {
+            "type": "string",
+            "title": "Mensagem"
+        }
+    },
+    "required": [
+        "email",
+        "name",
+        "orderNumber",
+        "phone",
+        "subject"
+    ],
+    "v-indexed": [
+        "email",
+        "name",
+        "orderNumber",
+        "phone",
+        "subject"
+    ],
+    "v-security": {
+        "publicJsonSchema": true,
+        "allowGetAll": false,
+        "publicRead": [
+            "email",
+            "name",
+            "orderNumber",
+            "phone",
+            "subject"
+        ],
+        "publicWrite": [
+            "email",
+            "name",
+            "orderNumber",
+            "phone",
+            "subject"
+        ],
+        "publicFilter": [
+            "email",
+            "name",
+            "orderNumber",
+            "phone",
+            "subject"
+        ]
+    }
+}

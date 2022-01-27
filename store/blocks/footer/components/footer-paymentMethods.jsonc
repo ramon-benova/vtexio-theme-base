@@ -1,0 +1,112 @@
+{
+  "flex-layout.col#footer-paymentMethods": {
+    "children": [
+      "rich-text#footer-paymentMethods-title",
+      "vtex.menu@2.x:menu#footer-paymentMethods-content"
+    ],
+    "props": {
+      "blockClass": ["footer-col", "footer-text", "footer-paymentMethods"],
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+
+  //Título
+  "rich-text#footer-paymentMethods-title": {
+    "props": {
+      "text": "Pagamento",
+      "blockClass": "footer-title"
+    }
+  },
+
+  //Conteúdo
+  "vtex.menu@2.x:menu#footer-paymentMethods-content": {
+    "children": [
+      "image#flag-visa",
+      "image#flag-amex",
+      "image#flag-hipercard",
+      "image#flag-diners",
+      "image#flag-master",
+      "image#flag-elo",
+      "image#flag-boleto",
+      "image#flag-pix",
+      "image#flag-mercadoPago"
+    ],
+    "props": {
+      "blockClass": "footer-payment-content",
+      "orientation": "horizontal"
+    }
+  },
+
+  "image#flag-amex": {
+    "props": {
+      "src": "/arquivos/bandeira-amex.png",
+      "maxWidth": 45,
+      "blockClass": "footer-payment--img"
+    }
+  },
+
+  "image#flag-hipercard": {
+    "props": {
+      "src": "/arquivos/bandeira-hipercard.png",
+      "maxWidth": 45,
+      "blockClass": "footer-payment--img"
+    }
+  },
+
+  "image#flag-boleto": {
+    "props": {
+      "src": "/arquivos/bandeira-boleto.png",
+      "maxWidth": 45,
+      "blockClass": "footer-payment--img"
+    }
+  },
+
+  "image#flag-diners": {
+    "props": {
+      "src": "/arquivos/bandeira-diners.png",
+      "maxWidth": 45,
+      "blockClass": "footer-payment--img"
+    }
+  },
+
+  "image#flag-elo": {
+    "props": {
+      "src": "/arquivos/bandeira-elo.png",
+      "maxWidth": 45,
+      "blockClass": "footer-payment--img"
+    }
+  },
+
+  "image#flag-master": {
+    "props": {
+      "src": "/arquivos/bandeira-master.png",
+      "maxWidth": 45,
+      "blockClass": "footer-payment--img"
+    }
+  },
+
+  "image#flag-visa": {
+    "props": {
+      "src": "/arquivos/bandeira-visa.png",
+      "maxWidth": 45,
+      "blockClass": "footer-payment--img"
+    }
+  },
+
+  "image#flag-pix": {
+    "props": {
+      "src": "/arquivos/bandeira-pix.png",
+      "maxWidth": 45,
+      "blockClass": "footer-payment--img"
+    }
+  },
+
+  "image#flag-mercadoPago": {
+    "props": {
+      "src": "/arquivos/bandeira-mercadopago.png",
+      "maxWidth": 45,
+      "blockClass": "footer-payment--img"
+    }
+  }
+}

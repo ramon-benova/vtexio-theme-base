@@ -1,0 +1,115 @@
+{
+    "store.custom#locationPage": {
+        "children":[
+            "flex-layout.row#locationPage"
+        ]
+    },
+
+    "flex-layout.row#locationPage": {
+        "children": [
+            "flex-layout.col#locationPage"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "center",
+            "colGap": 0,
+            "marginTop": 8,
+            "marginBottom": 8
+        }
+    },
+
+    "flex-layout.col#locationPage": {
+        "children": [
+            "flex-layout.row#locationPageTitle",
+            "flex-layout.row#locationPageContent"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "colGap": 0
+        }
+    },
+
+    "flex-layout.row#locationPageTitle": {
+        "children": [
+            "rich-text#text-locationPageTitle"
+        ],
+        "props": {
+            "preventVerticalStretch": false,
+            "preventHorizontalStretch": false
+        }
+    },
+
+    "rich-text#text-locationPageTitle": {
+        "props": {
+            "text": "## Nossas Lojas Físicas",
+            "blockClass": ["text-institucional", "text-locationPage"]
+        }
+    },
+
+    "flex-layout.row#locationPageContent": {
+        "children": [
+            "flex-layout.row#locationAbout",
+            "flex-layout.row#locationIframe"
+        ],
+        "props": {
+            "preventVerticalStretch": false,
+            "preventHorizontalStretch": false,
+            "marginTop": 5
+        }
+    },
+
+    "flex-layout.row#locationAbout": {
+        "children": [
+            "flex-layout.col#text-locationPage"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "colGap": 0,
+            "blockClass": "location-about"
+        }
+    },
+
+    "flex-layout.col#text-locationPage": {
+        "children": [
+            "rich-text#text-locationPage"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": ["text-institucional", "text-locationPage"]
+        }
+    },
+
+    "rich-text#text-locationPage": {
+        "props": {
+            "text": "### Dados da Empresa:\n Caús Site Móveis e Eletrodomésticos - CNPJ: 42.415.855/0001-23\n ### Horário de Funcionamento:\n Segunda à Sexta: 8:30 às 17:30\n ### Endereço:\n Rua FRANCISCO FERREIRA, 129 - Baixo Guandu/ES - CEP: 29730-000",
+            "blockClass": ["text-institucional", "text-locationPage"]
+        }
+    },
+
+
+    "flex-layout.row#locationIframe": {
+        "children": [
+            "iframe.dynamic-src#locationIframe"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "colGap": 0,
+            "blockClass": "location-iframe"
+        }
+    },
+
+    "iframe.dynamic-src#locationIframe":{
+        "props": {
+            "dynamicSrc": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3760.5625201499975!2d-41.0145323!3d-19.5174489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb73c40d0e40117%3A0x4a184cdd0880c1d6!2sR.%20Francisco%20Ferreira%2C%20129%20-%20Baixo%20Guandu%2C%20ES%2C%2029730-000!5e0!3m2!1spt-BR!2sbr!4v1632424724203!5m2!1spt-BR!2sbr",
+            "width": "100%",
+            "height": "450",
+            "title": "",
+            "allow": "geolocation",
+            "blockClass": "location"
+        }
+    }
+}

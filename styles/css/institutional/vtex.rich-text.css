@@ -1,0 +1,52 @@
+.headingLevel2--text-institucional{
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 30px 0;
+}
+
+.headingLevel3--text-institucional{
+    font-size: 16px;
+    line-height: 22px;
+    margin: 35px 0 20px;
+    font-weight: bold;
+}
+
+.headingLevel4--text-institucional{
+    font-size: 14px;
+    line-height: 22px;
+    margin: 30px 0 15px;
+    font-weight: bold;
+}
+
+.headingLevel5--text-institucional{
+    font-size: 13px;
+    line-height: 20px;
+    margin: 30px 0 15px;
+    font-weight: bold;
+}
+
+.paragraph--text-institucional{
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 15px 0;
+}
+
+.list--text-institucional{
+    margin: 10px 0;
+}
+
+.list--text-institucional{
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 15px 0;
+}
+
+.listItem--text-instituciona{
+    margin: 3px 0;
+}
+
+
+/* Nossas Lojas */
+.headingLevel3--text-locationPage:first-child{
+    margin-top: 0;
+}

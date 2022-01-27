@@ -1,0 +1,72 @@
+{
+    "flex-layout.row#home-banner-brands": {
+        "children": [
+            "flex-layout.col#home-banner-brands"
+        ],
+        "props": {
+            "blockClass": ["home-container", "banner-home-brands"]
+        }
+    },
+
+    "flex-layout.col#home-banner-brands": {
+        "children": [
+            "rich-text#home-banner-brands-title",
+            "list-context.image-list#home-banner-brands"
+        ]
+    },
+
+    //Marcas - Título
+    "rich-text#home-banner-brands-title": {
+        "props": {
+            "text": "## Marcas que Amamos",
+            "blockClass": ["banner-home-brands-title", "title-primary"]
+        }
+    },
+
+    "list-context.image-list#home-banner-brands": {
+        "children": [
+            "slider-layout#home-banner-brands-images"
+        ],
+        "props": {
+            "images": [
+                {
+                    "image": "/arquivos/banner-home-brands.png"
+                },
+                {
+                    "image": "/arquivos/banner-home-brands.png"
+                },
+                {
+                    "image": "/arquivos/banner-home-brands.png"
+                },
+                {
+                    "image": "/arquivos/banner-home-brands.png"
+                },
+                {
+                    "image": "/arquivos/banner-home-brands.png"
+                },
+                {
+                    "image": "/arquivos/banner-home-brands.png"
+                },
+                {
+                    "image": "/arquivos/banner-home-brands.png"
+                }
+            ]
+        }
+    },
+
+    "slider-layout#home-banner-brands-images": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 8,
+                "tablet": 2,
+                "phone": 2
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "showPaginationDots": false,
+            "blockClass": "banner-home-brands-slider",
+            "fullWidth": false,
+            "arrowSize": 12
+        }
+    }
+}

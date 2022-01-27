@@ -1,0 +1,38 @@
+{
+    "flex-layout.col#pdp-unavailable": {
+        "children": [
+            //Nome do Produto
+            "flex-layout.row#pdp-name",
+
+            //Cód. Referencia / Avaliação
+            "flex-layout.row#pdp-ref-rating",
+
+            //Preços / Wishlist
+            "flex-layout.row#pdp-priceAndWishlist",
+
+            //Variantes
+            "sku-selector#pdp",
+
+            "flex-layout.row#message-unavailable"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "colSizing": "auto",
+            "colGap": 0,
+            "rowGap": 0,
+            "blockClass": ["productInfo--pdp", "info-unavailable"]
+        }
+    },
+
+
+    "flex-layout.row#message-unavailable": {
+        "children": [
+            "availability-subscriber"
+        ],
+        "props": {
+            "blockClass": "message-unavailable"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "flex-layout.row#home-banner-slider": {
+    "children": [
+      "list-context.image-list#home-banner-slider"
+    ],
+    "props": {
+      "blockClass": "banner-home-slider"
+    }
+  },
+
+  "list-context.image-list#home-banner-slider": {
+    "children": [
+      "slider-layout#home-banner-slider-images"
+    ],
+    "props": {
+      "height": 625,
+      "preload": true,
+      "images": [
+        {
+          "image": "/arquivos/banner-home-slider-desktop.png",
+          "mobileImage": "/arquivos/banner-home-slider-mobile.png"
+        },
+        {
+          "image": "/arquivos/banner-home-slider-desktop.png",
+          "mobileImage": "/arquivos/banner-home-slider-mobile.png"
+        },
+        {
+          "image": "/arquivos/banner-home-slider-desktop.png",
+          "mobileImage": "/arquivos/banner-home-slider-mobile.png"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#home-banner-slider-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "banner-home-slider",
+      "fullWidth": true,
+      "arrowSize": 12
+    }
+  }
+}

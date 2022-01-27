@@ -1,0 +1,58 @@
+{
+  "store.product": {
+    "children": [
+      //Migalha de Pão
+      "flex-layout.row#pdp-breadcrumb",
+
+      //Informações do Produto
+      "condition-layout.product#pdp-renderInfo",
+
+      //Descrição
+      "flex-layout.row#pdp-description",
+
+      //Produtos Relacionados
+      "flex-layout.row#pdp-relatedProducts",
+
+      //Avaliações
+      "flex-layout.row#pdp-reviews"
+    ]
+  },
+
+  "condition-layout.product#pdp-renderInfo": {
+    "props": {
+      "conditions": [{"subject": "isProductAvailable"}],
+      "Then": "flex-layout.row#pdp-available",
+      "Else": "flex-layout.row#pdp-unavailable"
+    }
+  },
+
+  //Produto Disponível
+  "flex-layout.row#pdp-available": {
+    "children": [
+      "flex-layout.col#pdp-image",
+      "flex-layout.col#pdp-available"
+    ],
+    "props": {
+      "colGap": 0,
+      "rowGap": 0,
+      "marginTop": 7,
+      "marginBottom": 7,
+      "blockClass": ["pdp-info", "pdp-info-available"]
+    }
+  },
+
+  //Produto Indisponível
+  "flex-layout.row#pdp-unavailable": {
+    "children": [
+      "flex-layout.col#pdp-image",
+      "flex-layout.col#pdp-unavailable"
+    ],
+    "props": {
+      "colGap": 0,
+      "rowGap": 0,
+      "marginTop": 7,
+      "marginBottom": 7,
+      "blockClass": ["pdp-info", "pdp-info-unavailable"]
+    }
+  }
+}

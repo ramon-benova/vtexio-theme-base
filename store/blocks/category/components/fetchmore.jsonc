@@ -1,0 +1,8 @@
+{
+    "flex-layout.row#category-fetchmore": {
+        "props": {
+            "marginTop": 3
+        },
+        "children": ["search-fetch-more"]
+    }
+}

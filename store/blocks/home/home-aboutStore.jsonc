@@ -1,0 +1,36 @@
+{
+    "flex-layout.row#home-aboutStore": {
+        "children": [
+            "flex-layout.col#home-aboutStore"
+        ],
+        "props": {
+            "blockClass": ["home-container"]
+        }
+    },
+
+    "flex-layout.col#home-aboutStore": {
+        "children": [
+            "rich-text#home-aboutStore-title",
+            "rich-text#home-aboutStore-text"
+        ]
+    },
+    
+    "rich-text#home-aboutStore-title": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Sobre a Caús Móveis e Eletrodomésticos",
+            "blockClass": "home-aboutStore-title"
+        }
+    },
+    
+    "rich-text#home-aboutStore-text": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Fundada em Resplendor, Minas Gerais, a Caús Móveis e Eletrodomésticos foi uma das primeiras lojas de móveis da região. Aquilo que começou como um trabalho em família, impulsionado por uma paixão profunda por atender as pessoas, se transformou rapidamente em um empreendimento regional. Com lojas espalhadas por seis cidades diferentes - Resplendor, Mutum, Lajinha, Ipanema, Mantena e Baixo Guandu - a família Caús Móveis te espera de braços abertos para te atender com muito amor e carinho.",
+            "blockClass": "home-aboutStore-text"
+        }
+    }
+}
+

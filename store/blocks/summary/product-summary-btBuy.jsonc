@@ -1,0 +1,23 @@
+{
+  "flex-layout.row#product-addToCart-summary":{
+    "children": [
+      "add-to-cart-button#summary"
+    ],
+    "props": {
+      "blockClass": "buyButton-summary",
+      "fullWidth": false,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false
+    }
+  },
+
+  "add-to-cart-button#summary": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "text": "Comprar",
+      "unavailableText": "Avise-me",
+      "blockClass": "buyButton-summary"
+    }
+  }
+}

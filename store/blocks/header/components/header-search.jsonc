@@ -1,0 +1,92 @@
+{
+    //Desktop
+    "flex-layout.col#header-search": {
+        "children": [
+            "search-bar" //header-search.jsonc
+        ],
+        "props": {
+            "blockClass": "header-search",
+            "horizontalAlignment": "center",
+            "verticalAlign": "middle",
+            "width": "grow"
+        }
+    },
+
+    //Mobile
+    "flex-layout.row#header-search-mobile": {
+        "children": [
+            "flex-layout.col#header-search"
+        ],
+        "props": {
+            "blockClass": ["header-search, header-search-mobile"],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "horizontalAlignment": "center",
+            "fullWidth": true
+        }
+    },
+
+    "search-bar":{
+        "blocks": [
+            "autocomplete-result-list.v2"
+        ],
+        "props": {
+            "displayMode": "clear-button",
+            "openAutocompleteOnFocus": true,
+            "placeholder": "Procure aqui tudo para sua casa",
+            "inputType": "text",
+            "horizontalAlignment": "center",
+            "hasIconLeft": false
+        }
+    },
+
+    "autocomplete-result-list.v2": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "props": {
+            "maxSuggestedTerms": 5,
+            "maxSuggestedProducts": 3,
+            "hideUnavailableItems": false
+            // "HorizontalProductSummary": "product-summary.shelf"
+        }
+    },
+
+
+    //Mobile
+    "disclosure-layout#header-search-icon": {
+        "children": [
+            "disclosure-trigger#header-search-trigger",
+            "disclosure-content#header-search-content"
+        ],
+        "props": {
+            "blockClass": "header-search-icon"
+        }
+    },
+
+    "disclosure-trigger#header-search-trigger": {
+        "children": [
+            "rich-text#header-search-icon"
+        ],
+        "props": {
+            "blockClass": "header-search-mobile"
+        }
+    },
+
+    "disclosure-content#header-search-content": {
+        "children": [
+            "flex-layout.row#header-search-mobile"
+        ],
+        "props": {
+            "blockClass": "header-search-mobile"
+        }
+    },
+
+    "rich-text#header-search-icon":{
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": ""
+        }
+    }
+}

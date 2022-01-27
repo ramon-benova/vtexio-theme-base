@@ -1,0 +1,40 @@
+{
+    "flex-layout.row#footer-bottom": {
+        "children": [
+            "image#logo-vtex",
+            "image#logo-benova"
+        ],
+        "props": {
+            "blockClass": "footer-developedBy",
+            "fullWidth": false,
+            "colGap": 5,
+            "rowGap": 0,
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true
+        }
+    },
+    
+    "image#logo-vtex": {
+        "props": {
+            "src": "/arquivos/logo-vtex.png",
+            "title": "Vtex",
+            "alt": "Vtex",
+            "link": "https://www.vtex.com/pt-br/",
+            "maxWidth": 80,
+            "blockClass": "footer-developedBy--img"
+        }
+    },
+    
+    "image#logo-benova": {
+        "props": {
+            "src": "/arquivos/logo-benova.png",
+            "title": "BENOVA® E-commerce & Performance Digital",
+            "alt": "BENOVA® E-commerce & Performance Digital",
+            "link": "https://benova.ag/",
+            "maxWidth": 100,
+            "blockClass": "footer-developedBy--img"
+        }
+    }
+}

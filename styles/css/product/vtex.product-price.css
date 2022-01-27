@@ -1,0 +1,66 @@
+/* Preço De */
+.listPrice{
+  color: #9E9D9C;
+  font-weight: 400;
+  text-align: left;
+  display: block;
+}
+
+.listPriceNumber,
+.listPriceValue{
+  color: #000000;
+}
+
+
+/* Melhor preço */
+.sellingPrice{
+  color: #de1519;
+  font-weight: 700;
+  text-align: left;
+  display: block;
+}
+
+.sellingNumber,
+.sellingValue{
+  color: #de1519;
+  font-weight: 700;
+}
+
+
+/* Preço à vista */
+.spotPrice{
+  color: #27ae60;
+  font-weight: 600;
+  text-align: left;
+  display: block;
+}
+
+
+.spotPriceNumber,
+.spotPriceValue{
+  color: #27ae60;
+  font-weight: 600;
+}
+
+
+
+/* Parcelamento */
+.installments{
+  color: #9E9D9C;
+  font-weight: 400;
+  text-align: left;
+  display: block;
+}
+
+.installmentsNumber,
+.installmentValue{
+  font-weight: 600;
+}
+
+
+/* Desconto */
+.savings{}
+
+@media screen and (min-width: 1026px){
+  .savings{}
+}

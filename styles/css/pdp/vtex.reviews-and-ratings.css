@@ -1,0 +1,224 @@
+.container{
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Título */
+.reviewsHeading{
+  font-weight: bold;
+  color: #DC1418;
+  background: #FFFFFF;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 1px solid #dddddd;
+  margin: 0 0 15px 0;
+  padding: 0 0 5px 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 1026px){
+  .reviewsHeading{
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+/* Comentários */
+.reviewCommentsContainer{
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  margin-top: 5px;
+
+  font-size: 13px;
+  line-height: 20px;
+  color: #212529;
+}
+
+/* Avaliação do Comentário */
+.starsContainer{
+  margin-right: 10px;
+}
+
+.reviewsRating{
+  font-size: 13px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #212529;
+}
+
+@media screen and (max-width: 1025px){
+  .reviewsRating{
+    flex-wrap: wrap;
+  }
+}
+
+
+.reviewsRatingAverage{
+  margin-right: 10px;
+}
+
+/* Botão Escrever novo comentário */
+.writeReviewContainer{
+  background: #27ae60;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: .3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.writeReviewContainer :global(.vtex__icon-caret-down){
+  display: none;
+}
+
+.writeReviewContainer :global(.vtex__icon-caret-up){
+  color: #FFFFFF;
+}
+
+.writeReviewButton,
+.loginLink{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 12x;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 1026px){
+  .writeReviewButton:hover,
+  .loginLink:hover{
+    color: #FFFFFF;
+  }
+}
+
+
+
+/* Formulário de novo Comentário */
+.formContainer{
+  margin-top: 15px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.formContainer :global(.vtex-input__label),
+.formContainer :global(.vtex-textarea__label){
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #212529;
+  margin: 15px 0 5px;
+}
+
+.formSubmit :global(.vtex-textarea__input){
+  border: 1px solid #d1d1d1;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.formSubmit :global(.vtex-button){
+  width: 100%;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+
+
+
+
+
+/* Título do Comentário */
+.reviewCommentUser{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #212529;
+}
+
+/* Timeline do Comentário */
+.reviewInfo{
+  font-size: 13px;
+  line-height: 20px;
+  color: #212529;
+}
+
+/* Ordernar Comentários */
+.reviewsOrderBy{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 0 10px 0;
+}
+
+.reviewsOrderBy::before{
+  content: "Ordernar por:";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0 15px 0 0;
+  font-weight: 600;
+  color: #212529;
+}
+
+.reviewsOrderBy :global(.vtex-dropdown__container){
+  border-radius: 30px;
+  border: 1px solid #d1d1d1;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+/* Comentário do usuário */
+.reviewComment{
+  padding: 15px 0;
+}
+
+.reviewCommentMessage{
+  font-size: 15px;
+  line-height: 22px;
+  margin: 20px 0 5px 0;
+  color: #818181;
+}
+
+
+/* Paginação */
+.reviewsPaging{
+  font-size: 13px;
+  line-height: 20px;
+  color: #818181;
+}
+
+.reviewsPaging :global(.vtex-button){
+  background: #FFFFFF!important;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 3px 6px 0 #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewsPaging :global(.vtex__icon-caret-left),
+.reviewsPaging :global(.vtex__icon-caret-right){
+  color: #de1519;
+  width: 8px;
+}
+
+.reviewsPaging :global(.vtex__icon-caret-right){
+  position: relative;
+  left: 2px;
+}

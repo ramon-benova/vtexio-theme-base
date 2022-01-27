@@ -1,0 +1,20 @@
+.productHighlightText {
+  background: #ffb400;
+  padding: 6px 8px;
+  display: block;
+  text-align: center;
+  margin-bottom: 3px;
+  color: #000;
+  font-weight: 500;
+  border-radius: 0 8px 0 8px;
+  font-size: 9px;
+  line-height: 11px;
+  max-width: 100px;
+}
+
+@media screen and (min-width: 1026px){
+  .productHighlightText {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

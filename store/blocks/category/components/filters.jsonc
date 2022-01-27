@@ -1,0 +1,29 @@
+{
+    "flex-layout.col#category-filters": {
+        "children": [
+            "filter-navigator.v3"
+        ],
+        "props": {
+            "blockClass": "filterCol"
+        }
+    },
+
+    "filter-navigator.v3": {
+        "blocks": [
+            "sidebar-close-button"
+        ],
+        "props": {
+            "closeOnOutsideClick": false,
+            "truncateFilters": false,
+            "showClearByFilter": false,
+            "fullWidthOnMobile": false,
+            "initiallyCollapsed": true,
+            "navigationTypeOnMobile": "collapsible",
+            "updateOnFilterSelectionOnMobile": false
+            // "scrollToTop": "smooth",
+            // "appliedFiltersOverview": "show",
+            // "totalProductsOnMobile": "show",
+            // "priceRangeLayout": "inputAndSlider",
+        }
+    }
+}

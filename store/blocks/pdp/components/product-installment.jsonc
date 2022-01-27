@@ -1,0 +1,22 @@
+
+{
+    "flex-layout.row#pdp-installmentList": {
+        "children": [
+            "flex-layout.col#pdp-installmentList"
+        ],
+        "props": {
+            "blockClass": "pdp-installmentsList"
+        }
+    },
+
+    "flex-layout.col#pdp-installmentList": {
+        "children": [
+            "product-installments-list",
+            "product-installments-list-item"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "verticalAlign": "middle"
+        }
+    }
+}

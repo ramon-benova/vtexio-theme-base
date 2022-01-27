@@ -1,0 +1,108 @@
+{
+    "list-context.product-list#shelf": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelf-products"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC",
+            "collection": "137",
+            "hideUnavailableItems": false
+        }
+    },
+
+    "slider-layout#shelf-products": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 2,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "showPaginationDots": false,
+            "blockClass": "shelf",
+            "arrowSize": 12
+        }
+    },
+
+    //Vitrine 01 - Linha
+    "flex-layout.row#home-shelf-01": {
+        "children": [
+            "flex-layout.col#home-shelf-01"
+        ],
+        "props": {
+            "blockClass": ["home-container", "shelf"]
+        }
+    },
+
+    //Vitrine 01 - Coluna
+    "flex-layout.col#home-shelf-01": {
+        "children": [
+            "rich-text#home-shelf-01-title",
+            "list-context.product-list#shelf"
+        ]
+    },
+
+    //Vitrine 01 - Título
+    "rich-text#home-shelf-01-title": {
+        "props": {
+            "text": "## Título Vitrine 1",
+            "blockClass": ["shelfTitle", "title-primary"]
+        }
+    },
+
+    //Vitrine 02 - Linha
+    "flex-layout.row#home-shelf-02": {
+        "children": [
+            "flex-layout.col#home-shelf-02"
+        ],
+        "props": {
+            "blockClass": ["home-container", "shelf"]
+        }
+    },
+
+    //Vitrine 02 - Coluna
+    "flex-layout.col#home-shelf-02": {
+        "children": [
+            "rich-text#home-shelf-02-title",
+            "list-context.product-list#shelf"
+        ]
+    },
+
+    //Vitrine 02 - Título
+    "rich-text#home-shelf-02-title": {
+        "props": {
+            "text": "## Título Vitrine 2",
+            "blockClass": ["shelfTitle", "title-primary"]
+        }
+    },
+
+    //Vitrine 03 - Linha
+    "flex-layout.row#home-shelf-03": {
+        "children": [
+            "flex-layout.col#home-shelf-03"
+        ],
+        "props": {
+            "blockClass": ["home-container", "shelf"]
+        }
+    },
+
+    //Vitrine 03 - Coluna
+    "flex-layout.col#home-shelf-03": {
+        "children": [
+            "rich-text#home-shelf-03-title",
+            "list-context.product-list#shelf"
+        ]
+    },
+
+    //Vitrine 03 - Título
+    "rich-text#home-shelf-03-title": {
+        "props": {
+            "text": "## Título Vitrine 3",
+            "blockClass": ["shelfTitle", "title-primary"]
+        }
+    }
+}

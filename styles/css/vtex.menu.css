@@ -1,0 +1,26 @@
+.styledLinkContainer{
+    margin: 0;
+    padding: 0;
+}
+
+.styledLinkIcon{
+    margin: 0;
+}
+
+.accordionIcon{
+    font-size: 0;
+    line-height: 0;
+}
+
+.accordionIcon::before{
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath fill='none' d='M5 15L12 8L5 1' stroke='%23DC1418' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    border: 1px solid #DC1418;
+    border-radius: 50%;
+}

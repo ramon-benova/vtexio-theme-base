@@ -1,0 +1,70 @@
+.paragraph--not-found-title{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
+
+@media screen and (min-width: 1026px){
+    .paragraph--not-found-title{
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 35px;
+    }
+}
+
+.paragraph--not-found-subtitle{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1026px){
+    .paragraph--not-found-subtitle{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+
+.container--not-found-text{
+    margin: 0 0 40px 0;
+}
+
+.paragraph--not-found-text{
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1026px){
+    .paragraph--not-found-text{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+
+.link--not-found-goHome{
+    background: #DE1519;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    transition: .3s;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1026px){
+    .link--not-found-goHome:hover{
+        padding: 12px 26px;
+    }
+}

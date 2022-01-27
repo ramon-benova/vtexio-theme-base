@@ -1,0 +1,11 @@
+{
+    //Estrelas
+    "flex-layout.col#pdp-rating": {
+        "children": ["product-rating-summary"],
+        "props": {
+            "preventVerticalStretch": true,
+            "verticalAlign": "middle",
+            "blockClass": "ratingSummary--pdp"
+        }
+    }
+}

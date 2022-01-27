@@ -1,0 +1,87 @@
+.trigger--header-search-mobile{
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border: 0;
+    background: transparent;
+    font-size: 0;
+}
+
+.trigger--header-search-mobile::before{
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.994' height='24' viewBox='0 0 23.994 24'%3E%3Cg transform='translate(-0.003 0)'%3E%3Cpath d='M22.991,18.14l-4.1-4.1a.769.769,0,0,0-1.088,0l-1.275,1.275-.644-.644a8.965,8.965,0,1,0-1.077,1.1l.633.633-1.4,1.4a.77.77,0,0,0,0,1.088l4.1,4.1a3.432,3.432,0,0,0,4.854-4.854Zm-8.776-3.922A7.426,7.426,0,1,1,16.39,8.967,7.422,7.422,0,0,1,14.215,14.218ZM21.9,21.906a1.892,1.892,0,0,1-2.678,0l-3.558-3.558,2.678-2.678L21.9,19.228A1.892,1.892,0,0,1,21.9,21.906Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background-size: 26px 26px;
+    display: block;
+}
+
+@media screen and (max-width: 1025px){
+    .trigger--header-search-mobile::before{
+        filter: invert(1);
+    }
+}
+
+
+.trigger--header-search-mobile--visible::before{
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23ad3d39;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(13.5 13.5)'%3E%3Cg transform='translate(-13.5 -13.5)'%3E%3Cpath class='a' d='M13.5,27A13.5,13.5,0,1,1,27,13.5,13.515,13.515,0,0,1,13.5,27Zm0-25.072A11.572,11.572,0,1,0,25.072,13.5,11.585,11.585,0,0,0,13.5,1.928Zm0,0'/%3E%3Cpath class='a' d='M156.894,157.86a.961.961,0,0,1-.682-.283l-9.643-9.643a.964.964,0,1,1,1.363-1.363l9.643,9.643a.964.964,0,0,1-.682,1.646Zm0,0' transform='translate(-138.573 -138.574)'/%3E%3Cpath class='a' d='M147.25,157.858a.964.964,0,0,1-.682-1.646l9.643-9.643a.964.964,0,1,1,1.363,1.363l-9.643,9.643A.961.961,0,0,1,147.25,157.858Zm0,0' transform='translate(-138.572 -138.572)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background-size: 26px 26px;
+    display: block;
+}
+
+@media screen and (max-width: 1025px){
+    .trigger--header-search-mobile--visible::before{
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23FFFFFF;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(13.5 13.5)'%3E%3Cg transform='translate(-13.5 -13.5)'%3E%3Cpath class='a' d='M13.5,27A13.5,13.5,0,1,1,27,13.5,13.515,13.515,0,0,1,13.5,27Zm0-25.072A11.572,11.572,0,1,0,25.072,13.5,11.585,11.585,0,0,0,13.5,1.928Zm0,0'/%3E%3Cpath class='a' d='M156.894,157.86a.961.961,0,0,1-.682-.283l-9.643-9.643a.964.964,0,1,1,1.363-1.363l9.643,9.643a.964.964,0,0,1-.682,1.646Zm0,0' transform='translate(-138.573 -138.574)'/%3E%3Cpath class='a' d='M147.25,157.858a.964.964,0,0,1-.682-1.646l9.643-9.643a.964.964,0,1,1,1.363,1.363l-9.643,9.643A.961.961,0,0,1,147.25,157.858Zm0,0' transform='translate(-138.572 -138.572)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        filter: invert(0);
+    }
+}
+
+
+.content--header-search-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    width: 100%;
+    transition: .3s;
+    padding: 0 15px;
+    opacity: 0;
+    visibility: hidden;
+    display: block !important;
+}
+
+.content--header-search-mobile--visible{
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width: 1025px){
+    .content--header-search-mobile--visible{
+        top: 0;
+        background: #de1519;
+    }
+
+    .content--header-search-mobile--visible::before {
+        /* content: ""; */
+        background: #FFF;
+        width: 100%;
+        display: block;
+        height: calc(100% - 123px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        z-index: -1;
+        border-bottom: 1px solid #ddd;
+    }
+}

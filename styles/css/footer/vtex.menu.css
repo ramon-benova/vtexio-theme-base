@@ -1,0 +1,76 @@
+@media screen and (max-width: 1025px){
+    .styledLinkContent--footer-title{
+        text-transform: uppercase;
+        color: #DC1418;
+        font-size: 15px;
+        line-height: 22px;
+        margin: 0 0 10px 0;
+        padding: 10px 0;
+        text-align: left;
+        font-weight: bold;
+        letter-spacing: .5px;
+        border-bottom: 1px solid #5B5B5B;
+    }
+}
+
+.styledLink--footer-text{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 8px 0;
+    transition: .3s;
+    display: block;
+}
+
+@media screen and (min-width: 1026px){
+    .styledLink--footer-text:hover{
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .menuItem--isOpen{
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
+/* Segurança */
+.menuContainer--footer-security-content{
+    flex-wrap: wrap;
+}
+
+.menuContainer--footer-security-content :global(.vtex-sandbox-iframe){
+    margin: 0 20px 20px 0;
+}
+
+/* Pagamento */
+.menuContainer--footer-payment-content{
+    flex-wrap: wrap;
+}
+
+/* Redes Sociais */
+.menuItem--footer-socialIcon{
+    margin: 8px 16px 0 0;
+    margin-left: 0;
+}
+
+.styledLinkIcon--footer-socialIcon{
+    margin: 0;
+}
+
+.styledLinkIcon--footer-socialIcon :global(.vtex-icon-facebook),
+.styledLinkIcon--footer-socialIcon :global(.vtex-icon-instagram){
+    fill: #FFFFFF;
+    transition: .3s;
+}
+
+@media screen and (min-width: 1026px){
+    .styledLinkIcon--footer-socialIcon:hover :global(.vtex-icon-facebook),
+    .styledLinkIcon--footer-socialIcon:hover :global(.vtex-icon-instagram){
+        fill: #DC1418;
+    }
+}

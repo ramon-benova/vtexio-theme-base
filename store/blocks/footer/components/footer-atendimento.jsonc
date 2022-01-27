@@ -1,0 +1,165 @@
+{
+  "flex-layout.col#footer-attendance": {
+    "children": [
+      "responsive-layout.desktop#attendance",
+      "responsive-layout.mobile#attendance"
+    ]
+  },
+
+  "responsive-layout.desktop#attendance": {
+    "children": ["flex-layout.col#footer-attendance-desktop"]
+  },
+
+  "responsive-layout.mobile#attendance": {
+    "children": ["flex-layout.col#footer-attendance-mobile"]
+  },
+
+
+  //Desktop
+  "flex-layout.col#footer-attendance-desktop": {
+    "children": [
+      "rich-text#footer-attendance-title",
+      "vtex.menu@2.x:menu#footer-attendance-content"
+    ],
+    "props": {
+      "blockClass": ["footer-col", "footer-text", "footer-attendance"],
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#footer-attendance-title": {
+    "props": {
+      "text": "Atendimento",
+      "blockClass": "footer-title"
+    }
+  },
+
+  //Mobile
+  "flex-layout.col#footer-attendance-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-attendance-mobile"
+    ],
+    "props": {
+      "blockClass": ["footer-col", "footer-text", "footer-attendance"],
+      "preventVerticalStretch": true
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-attendance-mobile": {
+    "children": [
+      "menu-item#footer-attendace-mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+
+  "menu-item#footer-attendace-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-title",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#footer-attendance-content-mobile"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#footer-attendance-content-mobile":{
+    "children": [
+      "vtex.menu@2.x:menu#footer-attendance-content"
+    ]
+  },
+
+
+
+
+
+
+
+  //Conteúdo
+  "vtex.menu@2.x:menu#footer-attendance-content": {
+    "children": [
+      // "rich-text#footer-attendance-telefone-subtitle",
+      // "rich-text#footer-attendance-telefones",
+
+      "rich-text#footer-attendance-whatsapp-subtitle",
+      "rich-text#footer-attendance-whatsapp",
+
+      "rich-text#footer-attendance-horario-subtitle",
+      "rich-text#footer-attendance-horario",
+
+      "rich-text#footer-attendance-email-subtitle",
+      "rich-text#footer-attendance-email"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "rich-text#footer-attendance-telefone-subtitle": {
+    "props": {
+      "text": "SAC:",
+      "blockClass": ["footer-subtitle", "footer-subtitle--first"]
+    }
+  },
+
+  "rich-text#footer-attendance-telefones": {
+    "props": {
+      "text": "",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#footer-attendance-whatsapp-subtitle": {
+    "props": {
+      "text": "Whatsapp:",
+      "blockClass": "footer-subtitle"
+    }
+  },
+
+  "rich-text#footer-attendance-whatsapp": {
+    "props": {
+      "text": "(27) 9 9690-3003",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#footer-attendance-horario-subtitle": {
+    "props": {
+      "text": "Horário de Atendimento:",
+      "blockClass": "footer-subtitle"
+    }
+  },
+
+  "rich-text#footer-attendance-horario": {
+    "props": {
+      "text": "Segunda à Sexta: 8:30 às 17:30",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "rich-text#footer-attendance-email-subtitle": {
+    "props": {
+      "text": "E-mail:",
+      "blockClass": "footer-subtitle"
+    }
+  },
+
+  "rich-text#footer-attendance-email": {
+    "props": {
+      "text": "atendimento@causmoveis.com.br",
+      "blockClass": "footer-text"
+    }
+  }
+
+}

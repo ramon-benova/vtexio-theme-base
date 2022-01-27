@@ -1,0 +1,28 @@
+{
+    "flex-layout.row#fetchprevious": {
+        "children": [
+            "search-fetch-previous"
+        ],
+        "props": {
+            "marginBottom": 3
+        }
+    },
+    "flex-layout.row#fetchmore": {
+        "children": [
+            "search-fetch-more"
+        ],
+        "props": {
+            "marginTop": 3
+        }
+    },
+    "search-fetch-previous": {
+        "props": {
+            "htmlElementForButton": "a"
+        }
+    },
+    "search-fetch-more": {
+        "props": {
+            "htmlElementForButton": "a"
+        }
+    }
+}

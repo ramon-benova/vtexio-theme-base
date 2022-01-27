@@ -1,0 +1,12 @@
+.buttonDataContainer--buyButton-summary{
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1026px){
+    .buttonDataContainer--buyButton-summary{
+        font-size: 14px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "flex-layout.row#empty-state": {
+        "children": ["flex-layout.col#empty-state"]
+    },
+
+    "flex-layout.col#empty-state": {
+        "children": [
+            "icon-cart#minicart-empty-state",
+            "rich-text#minicart-default-empty-state"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "verticalAlign": "middle",
+            "rowGap": 5
+        }
+    },
+
+    "minicart-empty-state": {
+        "children": ["flex-layout.row#empty-state"]
+    },
+
+    "icon-cart#minicart-empty-state": {
+        "props": {
+            "size": 64,
+            "viewBox": "0 0 33.291 29.17",
+            "blockClass": "minicart-empty-state"
+        }
+    },
+
+    "rich-text#minicart-default-empty-state": {
+        "props": {
+            "text": "Seu carrinho está vazio :("
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.link--header-centralDeAtendimento,
+.link--header-meusPedidos,
+.link--header-nossasLojasFisicas,
+.link--header-wishlist,
+.link--header-faleConosco{
+  padding: 10px 0;
+  text-decoration: none;
+  color: #212529;
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+}
+
+/* .link--header-wishlist::after, */
+.link--header-meusPedidos::after,
+.link--header-nossasLojasFisicas::after{
+  content: '|';
+  padding: 0 5px;
+  margin: 0 5px;
+}

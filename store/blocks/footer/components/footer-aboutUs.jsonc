@@ -1,0 +1,145 @@
+{
+  "flex-layout.col#footer-aboutUs": {
+    "children": [
+      "responsive-layout.desktop#aboutUs",
+      "responsive-layout.mobile#aboutUs"
+    ]
+  },
+
+  "responsive-layout.desktop#aboutUs": {
+    "children": ["flex-layout.col#footer-aboutUs-desktop"]
+  },
+
+  "responsive-layout.mobile#aboutUs": {
+    "children": ["flex-layout.col#footer-aboutUs-mobile"]
+  },
+
+
+  //Desktop
+  "flex-layout.col#footer-aboutUs-desktop": {
+    "children": [
+      "rich-text#footer-aboutUs-title",
+      "vtex.menu@2.x:menu#footer-aboutUs-content"
+    ],
+    "props": {
+      "blockClass": ["footer-col", "footer-aboutUs"],
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#footer-aboutUs-title": {
+    "props": {
+      "text": "Sobre Nós",
+      "blockClass": "footer-title"
+    }
+  },
+
+
+
+  //Mobile
+  "flex-layout.col#footer-aboutUs-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-aboutUs-mobile"
+    ],
+    "props": {
+      "blockClass": ["footer-col", "footer-aboutUs"],
+      "preventVerticalStretch": true
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-aboutUs-mobile": {
+    "children": [
+      "menu-item#footer-aboutUs-mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#footer-aboutUs-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-title",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sobre Nós",
+        "text": "Sobre Nós"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#footer-aboutUs-content-mobile"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#footer-aboutUs-content-mobile":{
+    "children": [
+      "vtex.menu@2.x:menu#footer-aboutUs-content"
+    ]
+  },
+
+
+
+
+  //Conteúdo
+  "vtex.menu@2.x:menu#footer-aboutUs-content": {
+    "children": [
+      "menu-item#quem-somos",
+      // "menu-item#fale-conosco",
+      "menu-item#nossas-lojas-fisicas"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-text"
+    }
+  },
+
+  "menu-item#quem-somos": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "/quem-somos",
+        "noFollow": false,
+        "tagTitle": "Quem somos",
+        "text": "Quem somos"
+      }
+    }
+  },
+  "menu-item#fale-conosco": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "/fale-conosco",
+        "noFollow": false,
+        "tagTitle": "Fale Conosco",
+        "text": "Fale Conosco"
+      }
+    }
+  },
+  "menu-item#nossas-lojas-fisicas": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "footer-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nossas-lojas-fisicas",
+        "noFollow": false,
+        "tagTitle": "Nossas Lojas Físicas",
+        "text": "Nossas Lojas Físicas"
+      }
+    }
+  }
+}

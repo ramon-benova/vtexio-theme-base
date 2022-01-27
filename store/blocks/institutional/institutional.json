@@ -1,0 +1,37 @@
+{
+    "store.custom#institucional": {
+        "blocks": [
+            "flex-layout.row#institucional"
+        ]
+    },
+
+    "flex-layout.row#institucional": {
+        "children": [
+            "flex-layout.col#text-institucional"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preventHorizontalStretch": true,
+            "colGap": 0,
+            "marginTop": 8,
+            "marginBottom": 8
+        }
+    },
+
+    "flex-layout.col#text-institucional": {
+        "children": [
+            "rich-text#text-institucional"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "blockClass": "text-institucional"
+        }
+    },
+
+    "rich-text#text-institucional": {
+        "props": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "blockClass": "text-institucional"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "flex-layout.row#pdp-quantity": {
+    "children": [
+      "product-quantity#pdp"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "colGap": 0,
+      "rowGap": 0,
+      "marginTop": 0,
+      "marginBottom": 0
+    }
+  },  
+
+  "product-quantity#pdp": {
+    "props": {
+      "showLabel": false,
+      "quantitySelectorStep": "unitMultiplier",
+      "selectorType": "stepper",
+      "showUnit": true,
+      "size": "regular"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.wishlistIconContainer--pdp{
+    box-shadow: 0 0 5px 0 #ddd !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    transition: .3s;
+}
+
+.wishlistIcon--pdp{
+    position: relative !important;
+    top: 3px !important;
+    background-size: 20px !important;
+    width: 32px !important;
+    height: 32px !important;
+    transition: .3s;
+}
+
+.wishlistIconContainer--pdp:hover{
+    box-shadow: 0 0 10px 3px #de1519 !important;
+}
+
+.wishlistIcon--pdp:hover{
+    background-size: 26px !important;
+}
